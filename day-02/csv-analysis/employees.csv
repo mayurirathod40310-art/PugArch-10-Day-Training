@@ -1,0 +1,15 @@
+id,name,department,salary
+E001,Amit,IT,35000
+E002,Sneha,HR,42000
+E003,Rahul,IT,38000
+E004,Priya,Finance,50000
+E005,Neha,HR,45000
+E006,Rohan,IT,40000
+E007,Kiran,Finance,55000
+E008,Anita,Marketing,32000
+E009,Varun,Marketing,36000
+E010,Meena,IT,47000
+E010,Meena,IT,47000
+E011,,HR,41000
+E012,Arjun,,39000
+
