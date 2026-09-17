@@ -2,96 +2,119 @@
 
 ## Objective
 
-Analyze, clean, and visualize a facility inspection dataset using Python, NumPy, Pandas, and Matplotlib.
+Analyze, clean, and visualize facility hygiene data using Python, NumPy, Pandas, and Matplotlib.
 
 ## Dataset
 
-The dataset contains 41 facility inspection records with information about:
+The official Facility Hygiene dataset provided for the training task was used.
 
-- Cleanliness
-- Odor
-- Waste level
-- Water availability
-- Footfall
-- Complaints
-- Inspection date
-
-After cleaning, 40 records remained.
+- Original records: 1000
+- Columns: 12
+- Cleaned records: 995
+- Dataset contains facility information, hygiene scores, complaints, cleaning time, and hygiene risk.
 
 ## Data Cleaning
 
-The following steps were performed:
+The following cleaning operations were performed:
 
-- Checked missing values and data types
-- Removed 1 duplicate row
-- Handled 5 missing values
-- Corrected 3 invalid score values
+- Checked for missing values
+- Removed duplicate rows
 - Filled missing numeric values using median
-- Filled missing categorical values using mode
-- Detected potential outliers using the IQR method
-- Converted inspection dates to date format
+- Filled missing water availability using mode
+- Checked invalid cleanliness and odor scores
+- Converted inspection dates to datetime format
+- Detected numerical outliers using the IQR method
 
-## Analysis
+### Cleaning Results
 
-Key statistics:
+- Missing cleanliness scores: 5
+- Missing waste level values: 3
+- Missing water availability values: 2
+- Duplicate rows removed: 5
+- Invalid cleanliness scores: 0
+- Invalid odor scores: 0
 
-| Metric | Average |
-|---|---:|
-| Cleanliness Score | 77.30 |
-| Odor Score | 3.25 |
-| Footfall | 608.25 |
-| Complaints | 6.73 |
+### Detected Outliers
 
-### Key Insights
+- Cleanliness score: 2
+- Footfall: 3
+- Complaints: 13
+- Hours since cleaning: 62
 
-1. Yavatmal has the lowest average cleanliness score (68.00).
-2. Cleanliness and complaints have a strong negative correlation (-0.93).
-3. 11 facilities have a high waste level.
-4. 11 facilities report no water availability.
+## Data Analysis
 
-## NumPy
+The analysis included:
 
-NumPy was used for:
+- NumPy arrays, dimensions, shape, indexing, slicing, and aggregation
+- Pandas DataFrame operations
+- Descriptive statistics
+- Location-wise analysis
+- Facility type distribution
+- Water availability analysis
+- Hygiene risk distribution
+- Correlation analysis
+- Highest complaint facilities
+- Lowest cleanliness facilities
 
-- Arrays and dimensions
-- Shape, indexing, and slicing
-- Mean, sum, minimum, and maximum calculations
+## Key Statistics
+
+- Average cleanliness score: 6.42
+- Average waste-bin fullness: 43.86%
+- Highest cleanliness location average: Manish Nagar (6.62)
+- Lowest cleanliness location average: Sitabuldi (6.09)
+
+## Key Insights
+
+1. Sitabuldi has the lowest average cleanliness score at 6.09.
+2. Cleanliness score and complaints have a correlation of -0.66, indicating a moderate negative association.
+3. 105 facilities have waste-bin fullness of 70% or higher.
+4. 118 facilities report no water availability.
+5. 272 facilities are classified as High hygiene risk.
+6. The five facilities with the lowest cleanliness scores are all classified as High hygiene risk.
 
 ## Visualizations
 
-Created 5 visualizations using Matplotlib:
+The following visualizations were created using Matplotlib:
 
-- Average cleanliness by location
-- Average complaints by location
-- Cleanliness score distribution
-- Cleanliness vs complaints
-- Facilities by waste level
+1. Average cleanliness score by location
+2. Average complaints by location
+3. Cleanliness score distribution histogram
+4. Cleanliness score vs complaints scatter plot
+5. Hygiene risk distribution
 
-## Project Structure
+## Tools Used
+
+- Python
+- NumPy
+- Pandas
+- Matplotlib
+- VS Code
+
+## Folder Structure
 
 day-03/
+│
 ├── dataset/
-│   └── facility_data.csv
+│   └── facility_hygiene_ml_dataset.xlsx
+│
 ├── data-cleaning/
 │   ├── data_cleaning.py
-│   └── cleaned_facility_data.csv
+│   └── cleaned_facility_hygiene_dataset.csv
+│
 ├── analysis/
 │   └── analysis.py
+│
 ├── visualizations/
 │   ├── visualizations.py
-│   ├── bar_chart_1.png
-│   ├── bar_chart_2.png
-│   ├── histogram.png
-│   ├── scatter_plot.png
-│   └── additional_visualization.png
+│   ├── bar_chart_cleanliness_by_location.png
+│   ├── bar_chart_complaints_by_location.png
+│   ├── histogram_cleanliness_scores.png
+│   ├── scatter_cleanliness_vs_complaints.png
+│   └── hygiene_risk_distribution.png
+│
 └── README.md
 
-## Technologies Used
 
-Python | NumPy | Pandas | Matplotlib
+## Conclusion
 
-## HOw to Run 
-.\venv\Scripts\python.exe day-03\data-cleaning\data_cleaning.py
-.\venv\Scripts\python.exe day-03\analysis\analysis.py
-.\venv\Scripts\python.exe day-03\visualizations\visualizations.py
-
+The facility hygiene dataset was successfully cleaned, analyzed, and visualized. The analysis identified missing values, duplicates, outliers, statistical patterns, and relationships between hygiene-related variables.

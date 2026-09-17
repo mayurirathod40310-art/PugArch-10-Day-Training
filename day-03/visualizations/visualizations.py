@@ -1,18 +1,32 @@
+
 import pandas as pd
 import matplotlib.pyplot as plt
 from pathlib import Path
 
-# Get day-03 folder
+# ==================== FILE PATHS ====================
+
 day3_folder = Path(__file__).resolve().parents[1]
 
-# Load cleaned dataset
-input_file = day3_folder / "data-cleaning" / "cleaned_facility_data.csv"
+input_file = (
+    day3_folder
+    / "data-cleaning"
+    / "cleaned_facility_hygiene_dataset.csv"
+)
 
+output_folder = (
+    day3_folder
+    / "visualizations"
+)
+
+output_folder.mkdir(exist_ok=True)
+
+# Read cleaned dataset
 df = pd.read_csv(input_file)
 
-# --------------------------------------------------
-# 1. Bar Chart - Average Cleanliness by Location
-# --------------------------------------------------
+
+# =====================================================
+# 1. BAR CHART - AVERAGE CLEANLINESS BY LOCATION
+# =====================================================
 
 cleanliness_by_location = (
     df.groupby("location")["cleanliness_score"]
@@ -20,21 +34,27 @@ cleanliness_by_location = (
     .sort_values()
 )
 
-plt.figure(figsize=(8, 5))
+plt.figure(figsize=(10, 6))
+
 cleanliness_by_location.plot(kind="bar")
+
 plt.title("Average Cleanliness Score by Location")
 plt.xlabel("Location")
 plt.ylabel("Average Cleanliness Score")
 plt.xticks(rotation=45)
 plt.tight_layout()
 
-plt.savefig(day3_folder / "visualizations" / "bar_chart_1.png")
+plt.savefig(
+    output_folder / "bar_chart_cleanliness_by_location.png",
+    dpi=150
+)
+
 plt.close()
 
 
-# --------------------------------------------------
-# 2. Bar Chart - Average Complaints by Location
-# --------------------------------------------------
+# =====================================================
+# 2. BAR CHART - AVERAGE COMPLAINTS BY LOCATION
+# =====================================================
 
 complaints_by_location = (
     df.groupby("location")["complaints"]
@@ -42,67 +62,106 @@ complaints_by_location = (
     .sort_values(ascending=False)
 )
 
-plt.figure(figsize=(8, 5))
+plt.figure(figsize=(10, 6))
+
 complaints_by_location.plot(kind="bar")
+
 plt.title("Average Complaints by Location")
 plt.xlabel("Location")
 plt.ylabel("Average Complaints")
 plt.xticks(rotation=45)
 plt.tight_layout()
 
-plt.savefig(day3_folder / "visualizations" / "bar_chart_2.png")
+plt.savefig(
+    output_folder / "bar_chart_complaints_by_location.png",
+    dpi=150
+)
+
 plt.close()
 
 
-# --------------------------------------------------
-# 3. Histogram - Cleanliness Score Distribution
-# --------------------------------------------------
+# =====================================================
+# 3. HISTOGRAM - CLEANLINESS SCORE DISTRIBUTION
+# =====================================================
 
-plt.figure(figsize=(8, 5))
-plt.hist(df["cleanliness_score"], bins=8, edgecolor="black")
+plt.figure(figsize=(8, 6))
+
+plt.hist(
+    df["cleanliness_score"],
+    bins=10,
+    edgecolor="black"
+)
+
 plt.title("Distribution of Cleanliness Scores")
 plt.xlabel("Cleanliness Score")
 plt.ylabel("Number of Facilities")
 plt.tight_layout()
 
-plt.savefig(day3_folder / "visualizations" / "histogram.png")
+plt.savefig(
+    output_folder / "histogram_cleanliness_scores.png",
+    dpi=150
+)
+
 plt.close()
 
 
-# --------------------------------------------------
-# 4. Scatter Plot - Cleanliness vs Complaints
-# --------------------------------------------------
+# =====================================================
+# 4. SCATTER PLOT - CLEANLINESS VS COMPLAINTS
+# =====================================================
 
-plt.figure(figsize=(8, 5))
-plt.scatter(df["cleanliness_score"], df["complaints"])
+plt.figure(figsize=(8, 6))
+
+plt.scatter(
+    df["cleanliness_score"],
+    df["complaints"],
+    alpha=0.6
+)
+
 plt.title("Cleanliness Score vs Complaints")
 plt.xlabel("Cleanliness Score")
-plt.ylabel("Complaints")
+plt.ylabel("Number of Complaints")
 plt.tight_layout()
 
-plt.savefig(day3_folder / "visualizations" / "scatter_plot.png")
+plt.savefig(
+    output_folder / "scatter_cleanliness_vs_complaints.png",
+    dpi=150
+)
+
 plt.close()
 
 
-# --------------------------------------------------
-# 5. Additional Visualization - Waste Level
-# --------------------------------------------------
+# =====================================================
+# 5. ADDITIONAL VISUALIZATION - HYGIENE RISK
+# =====================================================
 
-waste_counts = df["waste_level"].value_counts()
+risk_counts = (
+    df["hygiene_risk"]
+    .value_counts()
+    .reindex(["Low", "Medium", "High"])
+)
 
-plt.figure(figsize=(8, 5))
-waste_counts.plot(kind="bar")
-plt.title("Facilities by Waste Level")
-plt.xlabel("Waste Level")
+plt.figure(figsize=(8, 6))
+
+risk_counts.plot(kind="bar")
+
+plt.title("Hygiene Risk Distribution")
+plt.xlabel("Hygiene Risk")
 plt.ylabel("Number of Facilities")
 plt.xticks(rotation=0)
 plt.tight_layout()
 
 plt.savefig(
-    day3_folder / "visualizations" / "additional_visualization.png"
+    output_folder / "hygiene_risk_distribution.png",
+    dpi=150
 )
+
 plt.close()
 
 
+# ==================== COMPLETION MESSAGE ====================
+
 print("All 5 visualizations created successfully.")
+
+print("\nFiles saved in:")
+print(output_folder)
 
