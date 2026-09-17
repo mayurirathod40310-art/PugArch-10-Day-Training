@@ -4,6 +4,28 @@
 
 Build a machine learning pipeline to predict facility hygiene risk using facility hygiene data.
 
+## Problem Statement
+
+The objective of this task is to build a basic machine learning classification system that predicts facility hygiene risk based on hygiene-related facility measurements.
+
+The project follows the complete machine learning workflow:
+
+```text
+Dataset
+  ↓
+Preprocessing
+  ↓
+Feature Engineering
+  ↓
+Train/Test Split
+  ↓
+Model Training
+  ↓
+Prediction
+  ↓
+Evaluation
+```
+
 ## Dataset
 
 The project uses the `facility_hygiene_ml_dataset.xlsx` dataset from Day 3.
@@ -23,6 +45,22 @@ The dataset contains **1000 records and 12 columns**. After preprocessing, **995
 * `footfall`
 * `hours_since_cleaning`
 
+## Features
+
+The project includes:
+
+* Data preprocessing
+* Missing-value handling
+* Duplicate removal
+* Invalid-value handling
+* Feature preparation
+* Train/test splitting
+* Feature scaling
+* Classification model training
+* Model comparison
+* Model evaluation
+* Hygiene risk prediction for new facility measurements
+
 ## Preprocessing
 
 The preprocessing script:
@@ -37,7 +75,9 @@ The preprocessing script:
 
 Output:
 
-`day-04/preprocessing/cleaned_dataset.csv`
+```text
+day-04/preprocessing/cleaned_dataset.csv
+```
 
 ## Machine Learning Models
 
@@ -62,12 +102,21 @@ Feature scaling using `StandardScaler` was applied to Logistic Regression.
 
 ## Evaluation
 
-The Logistic Regression model was evaluated using:
+The models were evaluated using classification metrics including:
 
-* Classification Report
+* Accuracy
+* Precision
+* Recall
+* F1 Score
 * Confusion Matrix
 
-The model achieved approximately **90% accuracy** on the test set.
+Regression error metrics covered in the training evaluation include:
+
+* MAE
+* MSE
+* RMSE
+
+The classification results were used to compare the performance of the trained models on the test dataset.
 
 ## Prediction
 
@@ -75,7 +124,124 @@ A separate prediction script accepts new facility measurements and predicts the 
 
 Example prediction:
 
-`High`
+```text
+High
+```
+
+## Architecture
+
+```text
+Raw Facility Dataset
+        ↓
+Data Preprocessing
+        ↓
+Cleaned Dataset
+        ↓
+Feature Selection & Preparation
+        ↓
+Train/Test Split
+        ↓
+ ┌─────────────────────┐
+ │                     │
+Logistic Regression   Random Forest
+ │                     │
+ └──────────┬──────────┘
+            ↓
+       Model Evaluation
+            ↓
+      Hygiene Risk Prediction
+```
+
+## Technology Stack
+
+* Python
+* Pandas
+* Scikit-learn
+* Joblib
+* Excel/CSV
+* VS Code
+
+## Installation
+
+### Prerequisites
+
+* Python 3.x
+* pip
+* VS Code
+
+### Required Libraries
+
+Install the required libraries:
+
+```bash
+pip install pandas scikit-learn joblib openpyxl
+```
+
+## How to Run
+
+### 1. Preprocessing
+
+Navigate to the preprocessing directory:
+
+```bash
+cd preprocessing
+python preprocess.py
+```
+
+### 2. Train Models
+
+Navigate to the models directory:
+
+```bash
+cd ../models
+python train_model.py
+```
+
+### 3. Evaluate the Model
+
+Navigate to the evaluation directory:
+
+```bash
+cd ../evaluation
+python evaluate_model.py
+```
+
+### 4. Make a Prediction
+
+Navigate to the predictions directory:
+
+```bash
+cd ../predictions
+python predict.py
+```
+
+## Challenges Faced
+
+* Preparing the dataset for machine learning.
+* Handling missing, duplicate, and invalid values.
+* Preparing categorical target labels for model training.
+* Comparing multiple classification algorithms.
+* Applying feature scaling where required.
+* Evaluating model performance using multiple metrics.
+
+## Solutions
+
+* Used preprocessing steps to clean and prepare the dataset.
+* Handled missing and invalid values before model training.
+* Used label encoding for the target variable.
+* Trained and compared Logistic Regression and Random Forest models.
+* Applied `StandardScaler` to Logistic Regression.
+* Used classification metrics and a confusion matrix for evaluation.
+* Saved trained models and preprocessing objects using Joblib.
+
+## Future Improvements
+
+* Perform additional feature selection and engineering.
+* Test additional machine learning algorithms.
+* Tune model hyperparameters.
+* Add cross-validation.
+* Expose the prediction model through a REST API.
+* Add a user interface for entering facility measurements and viewing predictions.
 
 ## Project Structure
 
@@ -98,16 +264,6 @@ day-04/
 └── README.md
 ```
 
-## Technologies Used
-
-* Python
-* Pandas
-* Scikit-learn
-* Joblib
-* Excel/CSV
-* VS Code
-
 ## Conclusion
 
-A complete machine learning workflow was implemented for facility hygiene-risk classification, including preprocessing, model training, evaluation, and prediction.
-
+A complete machine learning workflow was implemented for facility hygiene-risk classification, including preprocessing, feature preparation, model training, model comparison, evaluation, and prediction.
