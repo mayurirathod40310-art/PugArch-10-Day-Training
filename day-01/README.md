@@ -46,6 +46,7 @@ A Python command-line application for managing employee records.
 
 The application follows a simple command-line architecture:
 
+```text
 User
   ↓
 Command-Line Menu
@@ -53,7 +54,7 @@ Command-Line Menu
 Employee Management Functions
   ↓
 Employee Records
-
+```
 
 The application accepts user input through the command line and performs the selected employee management operation.
 
