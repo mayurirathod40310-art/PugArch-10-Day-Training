@@ -1,0 +1,263 @@
+:root {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1f2937;
+    background: #eef2f7;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+
+    --primary: #2563eb;
+    --primary-dark: #1d4ed8;
+    --card: #ffffff;
+    --border: #dbe3ef;
+    --muted: #64748b;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    background: #eef2f7;
+}
+
+button,
+input,
+select {
+    font: inherit;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 16px;
+    background: var(--primary);
+    color: white;
+    font-weight: 600;
+}
+
+button:hover {
+    background: var(--primary-dark);
+}
+
+#root {
+    width: 100%;
+}
+
+.app-container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 35px;
+}
+
+.app-header {
+    background: linear-gradient(135deg, #1e3a8a, #2563eb);
+    color: white;
+    padding: 40px;
+    border-radius: 18px;
+    margin-bottom: 30px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(30, 58, 138, 0.25);
+}
+
+.app-header h1 {
+    color: white;
+    margin: 0 0 12px;
+    font-size: 36px;
+}
+
+.app-header p {
+    margin: 0;
+    color: #dbeafe;
+    font-size: 16px;
+}
+
+.dashboard-section,
+.form-section,
+.filter-section,
+.table-section,
+.details-section,
+.api-section {
+    background: var(--card);
+    border: 1px solid var(--border);
+    border-radius: 15px;
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 5px 15px rgba(15, 23, 42, 0.06);
+}
+
+h2 {
+    color: #1e293b;
+    margin-top: 0;
+    margin-bottom: 20px;
+}
+
+/* Dashboard cards */
+
+.dashboard-section > div > h1 {
+    display: none;
+}
+
+.dashboard-section > div > div {
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard-section > div > div > div {
+    flex: 1;
+    background: #eff6ff;
+    border: 1px solid #bfdbfe;
+    border-radius: 12px;
+    padding: 22px;
+    text-align: center;
+}
+
+.dashboard-section h3 {
+    color: #1e40af;
+    margin: 0 0 10px;
+}
+
+.dashboard-section p {
+    color: #1d4ed8;
+    font-size: 30px;
+    font-weight: bold;
+    margin: 0;
+}
+
+/* Form */
+
+.form-section form {
+    padding: 0;
+    border: none;
+    box-shadow: none;
+}
+
+.form-section form > div {
+    display: inline-block;
+    width: 24%;
+    margin-right: 1%;
+    vertical-align: top;
+}
+
+label {
+    display: block;
+    color: #374151;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 7px;
+}
+
+input,
+select {
+    width: 100%;
+    padding: 11px 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 8px;
+    background: white;
+    color: #1f2937;
+    margin-bottom: 15px;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #bfdbfe;
+    border-color: var(--primary);
+}
+
+/* Filters */
+
+.filters {
+    display: flex;
+    gap: 15px;
+}
+
+.filters input,
+.filters select {
+    flex: 1;
+    margin-bottom: 0;
+}
+
+/* Table */
+
+.table-section {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th {
+    background: #1e3a8a;
+    color: white;
+    padding: 15px;
+    text-align: left;
+}
+
+td {
+    padding: 14px 15px;
+    border-bottom: 1px solid var(--border);
+    text-align: left;
+}
+
+tr:hover {
+    background: #eff6ff;
+}
+
+td button {
+    padding: 7px 11px;
+    font-size: 13px;
+    margin: 3px;
+}
+
+td button:last-child {
+    background: #dc2626;
+}
+
+td button:last-child:hover {
+    background: #b91c1c;
+}
+
+/* Details and API */
+
+.details-section p {
+    color: #475569;
+}
+
+.api-section {
+    background: #f8fafc;
+}
+
+@media (max-width: 768px) {
+    .app-container {
+        padding: 15px;
+    }
+
+    .app-header {
+        padding: 25px 15px;
+    }
+
+    .app-header h1 {
+        font-size: 27px;
+    }
+
+    .dashboard-section > div > div {
+        flex-direction: column;
+    }
+
+    .form-section form > div {
+        display: block;
+        width: 100%;
+        margin: 0;
+    }
+
+    .filters {
+        flex-direction: column;
+        gap: 0;
+    }
+}
+
