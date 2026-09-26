@@ -1,4 +1,4 @@
-﻿# PugArch Day 8 - Database + Laravel API
+﻿#  Day 8 - Database + Laravel API
 
 ## Project Overview
 A relational database and REST API project for employee and smart facility management using Laravel and Eloquent ORM.
