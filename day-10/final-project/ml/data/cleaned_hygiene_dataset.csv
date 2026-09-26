@@ -1,0 +1,996 @@
+location,facility_type,cleanliness_score,odor_score,waste_level,water_availability,footfall,complaints,hours_since_cleaning,hygiene_risk,inspection_month,inspection_day_of_week
+Nagpur Central,Public Washroom,6.1,4.7,45.5,Yes,584,5,8.5,Medium,8,2
+Sadar,School Washroom,5.9,5.9,54.6,Yes,106,4,9.1,Medium,8,0
+Dharampeth,Public Washroom,3.5,6.2,95.8,Yes,446,9,3.1,High,6,0
+Hingna,Public Washroom,10.0,1.0,21.0,Yes,424,1,4.6,Low,3,3
+Dharampeth,Office Washroom,3.0,7.2,54.5,Yes,133,7,9.1,High,5,4
+Dharampeth,Transit Washroom,6.8,5.0,30.6,Yes,496,3,3.3,Medium,5,6
+Nagpur Central,Office Washroom,4.8,5.0,59.3,Yes,674,5,19.5,High,6,1
+Sadar,Mall Washroom,5.2,6.8,32.4,Yes,874,7,6.3,High,6,3
+Civil Lines,School Washroom,2.5,8.5,74.7,Yes,334,5,10.2,High,8,5
+Sitabuldi,Mall Washroom,5.6,2.5,88.3,Yes,60,5,14.8,Medium,3,4
+Kamptee Road,Hospital Washroom,5.8,5.4,15.5,Yes,926,5,26.6,High,2,5
+Kamptee Road,Office Washroom,6.2,4.9,33.5,Yes,439,4,9.6,Medium,5,4
+Civil Lines,Hospital Washroom,5.5,5.5,33.5,Yes,130,4,1.7,Medium,1,3
+Civil Lines,Public Washroom,7.2,3.2,37.7,Yes,827,4,2.1,Medium,5,0
+Kamptee Road,Transit Washroom,8.3,3.5,48.8,Yes,586,1,1.0,Low,5,5
+Mihan,Transit Washroom,6.8,3.4,45.3,Yes,411,3,2.8,Low,7,5
+Sadar,Public Washroom,5.0,6.3,59.7,Yes,447,8,6.7,High,1,5
+Civil Lines,Transit Washroom,6.5,6.6,28.0,Yes,454,6,1.8,Medium,3,0
+Dharampeth,Public Washroom,3.1,8.3,77.3,Yes,296,6,4.2,High,1,2
+Sitabuldi,Hospital Washroom,7.4,2.6,42.7,Yes,431,4,4.5,Low,8,2
+Dharampeth,Office Washroom,2.6,9.0,100.0,Yes,612,8,0.8,High,1,3
+Manish Nagar,School Washroom,4.5,7.3,75.5,Yes,367,7,3.6,High,7,6
+Civil Lines,Mall Washroom,5.8,7.2,46.8,Yes,48,5,5.0,Medium,1,4
+Nagpur Central,Transit Washroom,7.6,1.3,27.5,Yes,205,1,14.4,Low,3,6
+Civil Lines,Public Washroom,7.5,3.9,17.1,Yes,244,3,1.0,Low,1,2
+Manish Nagar,School Washroom,5.5,4.0,61.5,Yes,566,5,9.4,Medium,5,6
+Dharampeth,Transit Washroom,8.3,4.1,0.0,No,564,4,0.5,Medium,2,5
+Mihan,Transit Washroom,4.7,6.5,70.4,No,761,7,3.5,High,3,6
+Manish Nagar,Public Washroom,5.6,3.7,71.9,Yes,404,4,12.7,Medium,3,1
+Kamptee Road,School Washroom,9.1,3.5,5.4,Yes,400,3,3.1,Low,5,5
+Sitabuldi,Mall Washroom,6.4,7.4,63.3,Yes,527,5,0.5,Medium,5,4
+Kamptee Road,Public Washroom,7.3,1.8,44.1,Yes,834,6,8.8,Medium,3,2
+Sadar,Mall Washroom,7.7,1.8,37.1,Yes,522,4,17.2,Medium,7,4
+Sadar,Office Washroom,2.8,8.2,83.3,Yes,597,7,7.3,High,3,5
+Manish Nagar,Office Washroom,9.8,1.0,16.1,Yes,396,3,3.0,Low,5,4
+Wardha Road,Hospital Washroom,5.0,6.1,50.5,Yes,528,5,12.7,High,8,0
+Kamptee Road,School Washroom,8.0,1.0,33.5,Yes,748,5,2.4,Low,6,0
+Nagpur Central,Public Washroom,6.4,2.1,7.4,Yes,873,3,2.3,Low,5,5
+Hingna,Public Washroom,5.0,5.3,60.4,No,200,9,0.9,High,1,4
+Dharampeth,Mall Washroom,5.7,3.0,47.5,Yes,764,4,1.6,Medium,8,6
+Kamptee Road,Office Washroom,8.7,1.4,20.0,No,332,4,5.3,Low,6,0
+Kamptee Road,Public Washroom,4.9,6.8,77.2,Yes,428,5,6.3,High,7,0
+Dharampeth,Hospital Washroom,6.0,5.8,52.3,Yes,137,4,4.4,Medium,3,5
+Sadar,Office Washroom,4.4,4.8,60.5,Yes,582,4,8.4,Medium,4,6
+Mihan,School Washroom,7.8,3.3,4.9,Yes,496,2,4.0,Low,7,3
+Sadar,Office Washroom,5.5,5.6,72.9,Yes,432,3,0.8,Medium,8,3
+Mihan,Transit Washroom,7.4,1.7,18.0,No,492,7,1.0,Medium,6,4
+Mihan,Hospital Washroom,8.0,4.1,2.9,Yes,629,2,1.3,Low,9,1
+Manish Nagar,Hospital Washroom,6.4,2.1,40.3,Yes,805,2,2.1,Low,5,4
+Hingna,School Washroom,7.5,2.8,50.3,Yes,469,6,9.2,Medium,2,0
+Mihan,Public Washroom,5.4,6.9,77.9,Yes,588,6,11.0,High,7,1
+Mihan,Office Washroom,6.3,5.7,41.1,Yes,754,3,5.8,Medium,4,3
+Hingna,Transit Washroom,6.1,6.4,31.2,Yes,640,7,9.7,Medium,1,2
+Wardha Road,Office Washroom,2.8,7.9,75.5,Yes,591,9,0.5,High,7,1
+Wardha Road,Office Washroom,4.7,6.6,67.9,No,308,10,4.1,High,1,1
+Civil Lines,Office Washroom,4.6,5.1,40.8,Yes,444,2,1.7,Medium,1,6
+Sitabuldi,Hospital Washroom,6.6,5.9,68.2,Yes,781,4,2.2,Medium,2,5
+Dharampeth,Transit Washroom,8.3,2.9,29.3,Yes,185,0,3.8,Low,4,6
+Wardha Road,Transit Washroom,5.4,3.9,72.7,Yes,656,9,6.9,High,1,3
+Hingna,Hospital Washroom,10.0,1.0,17.9,Yes,197,3,13.0,Low,2,1
+Mihan,School Washroom,4.0,5.2,62.0,Yes,203,5,25.2,High,9,5
+Sadar,School Washroom,9.8,2.0,0.0,Yes,444,4,2.5,Low,8,2
+Civil Lines,Mall Washroom,3.8,6.4,59.4,Yes,649,6,5.0,High,5,6
+Mihan,Mall Washroom,7.6,4.6,21.4,Yes,489,4,3.9,Low,5,0
+Hingna,Mall Washroom,5.9,3.7,60.5,Yes,449,4,2.1,Medium,6,4
+Dharampeth,Mall Washroom,4.8,5.0,54.7,Yes,374,6,9.6,Medium,6,3
+Dharampeth,Office Washroom,3.3,7.2,76.2,Yes,571,9,9.7,High,5,0
+Kamptee Road,Hospital Washroom,6.1,4.5,59.8,Yes,400,4,0.5,Medium,1,2
+Nagpur Central,Hospital Washroom,6.1,4.3,58.1,Yes,241,3,6.4,Medium,4,6
+Sitabuldi,Office Washroom,6.8,5.6,35.0,Yes,359,4,7.4,Medium,1,2
+Mihan,School Washroom,8.1,1.0,38.2,Yes,514,1,4.0,Low,7,1
+Sadar,Mall Washroom,4.9,5.6,75.7,Yes,359,6,24.2,High,2,4
+Nagpur Central,Office Washroom,7.1,5.8,42.9,Yes,543,2,0.5,Medium,5,5
+Hingna,Public Washroom,7.2,3.5,48.3,Yes,574,4,2.3,Medium,4,6
+Mihan,Public Washroom,3.8,6.7,89.8,Yes,205,6,1.4,High,5,3
+Hingna,Mall Washroom,9.4,1.0,19.7,Yes,391,3,4.3,Low,1,2
+Civil Lines,Public Washroom,5.8,6.1,79.9,Yes,735,12,6.4,High,5,0
+Mihan,Public Washroom,4.1,7.0,56.4,Yes,263,6,36.0,High,8,2
+Kamptee Road,Public Washroom,4.5,6.7,58.7,Yes,523,4,4.0,High,7,5
+Kamptee Road,School Washroom,6.5,3.4,46.9,Yes,649,4,5.4,Medium,1,3
+Mihan,Mall Washroom,5.4,6.0,38.2,Yes,712,6,10.7,High,5,3
+Kamptee Road,School Washroom,8.7,2.0,24.0,Yes,535,0,2.8,Low,1,3
+Hingna,School Washroom,10.0,3.2,25.3,Yes,302,0,13.4,Low,5,2
+Dharampeth,Hospital Washroom,6.4,5.6,43.1,Yes,60,6,5.3,Medium,3,2
+Sitabuldi,School Washroom,6.9,1.6,26.7,Yes,757,3,0.5,Low,9,1
+Sadar,Transit Washroom,2.8,7.0,73.7,Yes,196,6,2.9,High,4,1
+Mihan,Public Washroom,3.6,9.1,59.2,Yes,532,4,18.4,High,3,3
+Nagpur Central,Mall Washroom,10.0,3.4,37.9,Yes,773,4,0.8,Low,8,5
+Wardha Road,Mall Washroom,8.8,4.3,28.2,Yes,413,1,2.3,Low,2,2
+Civil Lines,Public Washroom,5.1,6.7,45.5,Yes,357,3,15.4,Medium,1,0
+Mihan,Office Washroom,6.7,6.3,39.4,Yes,583,5,28.7,High,2,5
+Sadar,Transit Washroom,3.4,6.6,44.0,Yes,482,5,3.5,High,3,0
+Sadar,School Washroom,4.0,8.0,69.7,Yes,553,6,3.6,High,3,6
+Dharampeth,School Washroom,4.4,5.7,50.6,Yes,628,5,2.5,Medium,3,6
+Dharampeth,Office Washroom,10.0,1.0,1.1,Yes,966,0,4.6,Low,9,5
+Manish Nagar,Public Washroom,10.0,1.0,21.0,Yes,415,1,13.3,Low,7,2
+Civil Lines,Hospital Washroom,3.8,6.4,67.7,Yes,360,7,5.1,High,4,1
+Dharampeth,Mall Washroom,5.5,5.7,61.4,Yes,443,3,8.6,Medium,3,3
+Sadar,Office Washroom,5.4,4.7,36.2,Yes,535,4,0.7,Medium,3,1
+Manish Nagar,Mall Washroom,9.4,2.2,0.0,Yes,254,1,1.3,Low,9,4
+Kamptee Road,Hospital Washroom,8.8,1.0,17.4,Yes,447,0,1.9,Low,7,3
+Civil Lines,School Washroom,3.9,8.2,74.4,Yes,580,8,10.4,High,5,4
+Dharampeth,Mall Washroom,8.4,1.0,34.3,Yes,531,0,16.2,Low,4,4
+Mihan,Public Washroom,4.8,7.5,31.4,Yes,328,6,21.9,High,6,4
+Hingna,Mall Washroom,9.7,2.9,24.8,Yes,612,3,10.2,Low,3,5
+Mihan,Office Washroom,5.7,6.5,60.2,Yes,484,5,3.5,Medium,8,6
+Mihan,Public Washroom,6.9,3.6,33.0,No,176,5,3.3,Medium,3,2
+Civil Lines,Office Washroom,7.1,2.9,21.0,Yes,813,4,2.1,Low,3,4
+Manish Nagar,Office Washroom,9.3,2.6,20.9,Yes,577,4,3.0,Low,1,4
+Sadar,Transit Washroom,9.7,2.9,13.3,Yes,770,4,1.1,Low,7,4
+Mihan,Transit Washroom,5.9,5.8,70.7,Yes,547,3,10.3,Medium,2,2
+Nagpur Central,School Washroom,6.9,4.4,58.9,Yes,701,3,2.7,Medium,1,4
+Manish Nagar,Transit Washroom,7.5,2.4,51.7,Yes,647,3,17.2,Medium,3,4
+Dharampeth,Mall Washroom,7.4,2.5,22.3,Yes,700,3,4.5,Low,8,6
+Hingna,School Washroom,8.5,3.7,38.2,Yes,236,4,4.2,Low,8,4
+Dharampeth,Public Washroom,5.1,5.8,44.1,Yes,413,9,8.7,High,8,0
+Dharampeth,School Washroom,6.8,3.7,59.6,Yes,635,3,6.1,Medium,6,3
+Wardha Road,Public Washroom,5.1,4.7,72.6,Yes,667,4,25.9,High,6,1
+Hingna,Transit Washroom,5.2,5.4,49.7,Yes,299,3,14.0,Medium,4,6
+Nagpur Central,Office Washroom,8.8,4.6,18.7,Yes,398,2,19.8,Low,5,6
+Dharampeth,Mall Washroom,5.9,7.3,60.4,Yes,333,5,1.2,Medium,1,4
+Nagpur Central,Office Washroom,5.8,4.0,47.2,Yes,534,6,2.9,Medium,2,4
+Wardha Road,School Washroom,7.8,4.7,26.7,Yes,274,2,5.0,Low,2,5
+Nagpur Central,Office Washroom,6.9,5.6,53.4,Yes,243,4,1.9,Medium,1,3
+Kamptee Road,Mall Washroom,6.0,5.8,55.0,Yes,558,5,0.5,Medium,7,1
+Nagpur Central,School Washroom,5.2,6.0,73.0,Yes,295,7,10.2,High,8,2
+Sitabuldi,Transit Washroom,9.7,1.0,0.0,Yes,298,1,4.1,Low,6,1
+Kamptee Road,Public Washroom,6.7,2.4,47.0,Yes,334,4,4.3,Low,7,5
+Wardha Road,Mall Washroom,5.1,6.6,49.4,Yes,597,7,5.4,High,6,6
+Dharampeth,Office Washroom,7.9,4.9,25.7,Yes,565,4,1.4,Low,3,4
+Wardha Road,Office Washroom,8.9,1.5,4.3,Yes,493,3,8.6,Low,6,0
+Manish Nagar,School Washroom,4.6,5.0,66.4,Yes,514,4,3.3,Medium,2,5
+Civil Lines,Transit Washroom,5.8,5.3,52.5,Yes,353,3,14.5,Medium,8,1
+Kamptee Road,Office Washroom,4.9,8.1,51.4,Yes,670,5,1.6,High,9,1
+Mihan,Transit Washroom,8.4,2.2,36.4,No,41,4,0.7,Low,8,3
+Wardha Road,Public Washroom,6.0,4.2,46.8,Yes,383,6,3.1,Medium,1,1
+Civil Lines,Mall Washroom,5.2,7.3,47.1,Yes,539,5,25.0,High,2,2
+Manish Nagar,Transit Washroom,5.7,6.1,60.8,No,360,7,6.8,High,2,4
+Kamptee Road,Hospital Washroom,4.0,8.6,74.1,Yes,127,6,10.1,High,8,2
+Sitabuldi,Public Washroom,4.3,7.8,64.7,No,225,11,1.6,High,3,3
+Civil Lines,School Washroom,5.5,7.7,35.1,Yes,416,3,5.6,Medium,3,0
+Hingna,Hospital Washroom,3.1,8.4,81.4,Yes,93,5,9.6,High,1,4
+Sadar,Hospital Washroom,5.8,4.3,39.0,Yes,491,3,4.5,Medium,8,5
+Sitabuldi,Office Washroom,6.1,4.2,30.7,Yes,476,1,5.2,Low,8,0
+Manish Nagar,Public Washroom,6.7,3.6,41.7,Yes,744,6,6.1,Medium,3,3
+Mihan,Hospital Washroom,8.6,2.5,13.5,No,571,6,21.9,Medium,4,4
+Wardha Road,Office Washroom,8.2,2.2,17.4,Yes,558,2,0.6,Low,2,4
+Civil Lines,Public Washroom,8.0,3.7,38.8,Yes,390,2,9.2,Low,8,1
+Manish Nagar,Public Washroom,6.7,4.2,43.4,No,552,5,7.0,Medium,5,5
+Kamptee Road,Transit Washroom,7.9,4.4,35.2,Yes,327,3,17.7,Medium,1,4
+Dharampeth,Transit Washroom,6.5,5.2,26.0,Yes,560,4,4.0,Medium,7,5
+Wardha Road,Hospital Washroom,5.7,3.1,44.0,Yes,873,5,0.5,Medium,7,5
+Nagpur Central,Hospital Washroom,6.4,3.4,53.9,Yes,497,2,0.8,Low,3,1
+Sitabuldi,Public Washroom,4.8,3.9,51.5,Yes,474,3,8.9,Medium,4,5
+Kamptee Road,School Washroom,5.4,2.6,62.5,Yes,463,4,16.3,Medium,7,3
+Manish Nagar,Public Washroom,7.9,3.1,54.3,Yes,191,5,15.1,Medium,6,4
+Kamptee Road,Hospital Washroom,7.0,2.7,26.8,No,569,7,3.1,Medium,7,2
+Dharampeth,Public Washroom,9.1,2.6,0.0,Yes,102,0,5.9,Low,6,6
+Civil Lines,School Washroom,5.7,6.3,29.7,Yes,546,2,4.4,Medium,6,1
+Nagpur Central,Office Washroom,7.4,3.0,74.1,No,709,8,3.4,High,3,0
+Civil Lines,Office Washroom,8.1,1.3,22.4,Yes,473,0,7.8,Low,1,5
+Wardha Road,Mall Washroom,9.9,1.0,0.0,Yes,453,0,5.7,Low,7,3
+Sadar,Transit Washroom,5.5,8.8,61.4,Yes,452,8,18.4,High,8,0
+Dharampeth,Mall Washroom,8.6,1.8,55.0,Yes,739,5,4.5,Low,8,6
+Wardha Road,Transit Washroom,10.0,1.0,1.1,Yes,129,0,2.6,Low,3,1
+Mihan,Transit Washroom,7.5,4.1,74.6,Yes,451,6,3.4,Medium,7,2
+Sitabuldi,Hospital Washroom,9.1,3.9,33.0,Yes,519,1,4.9,Low,2,5
+Sitabuldi,School Washroom,7.4,2.7,23.5,Yes,177,5,11.4,Low,4,5
+Dharampeth,Hospital Washroom,2.6,8.4,86.9,Yes,198,9,1.3,High,5,1
+Civil Lines,Transit Washroom,5.9,6.2,82.0,Yes,215,4,0.7,Medium,3,5
+Civil Lines,Hospital Washroom,8.0,4.6,26.5,Yes,135,3,6.2,Low,1,5
+Manish Nagar,School Washroom,6.0,3.7,28.6,Yes,264,2,7.4,Low,5,4
+Civil Lines,Office Washroom,6.5,6.9,30.7,Yes,564,3,1.3,Medium,6,2
+Kamptee Road,Transit Washroom,7.5,2.7,55.1,Yes,813,1,1.1,Low,7,3
+Sadar,Office Washroom,7.5,4.1,45.5,Yes,597,7,0.5,Medium,8,0
+Mihan,Hospital Washroom,5.1,7.1,26.0,Yes,477,6,36.0,High,8,4
+Manish Nagar,Transit Washroom,5.6,5.4,39.5,Yes,581,6,6.6,Medium,8,5
+Hingna,Public Washroom,6.9,4.7,40.2,Yes,410,5,3.9,Medium,1,5
+Sitabuldi,Public Washroom,5.3,5.3,49.1,Yes,401,4,10.8,Medium,3,0
+Kamptee Road,Public Washroom,10.0,1.0,27.4,Yes,772,1,1.7,Low,7,5
+Sitabuldi,School Washroom,7.4,3.8,27.5,Yes,646,2,7.0,Low,6,5
+Mihan,Public Washroom,6.2,6.9,44.8,Yes,216,7,5.7,Medium,6,2
+Manish Nagar,Mall Washroom,4.5,7.9,79.9,Yes,393,7,9.7,High,8,0
+Sitabuldi,Mall Washroom,6.0,5.5,24.3,Yes,377,2,1.4,Low,7,1
+Civil Lines,School Washroom,6.4,6.2,40.7,Yes,293,3,4.1,Medium,9,0
+Kamptee Road,School Washroom,7.1,5.4,21.7,Yes,526,4,2.9,Medium,9,2
+Civil Lines,School Washroom,5.9,5.8,59.8,Yes,324,4,11.1,Medium,5,5
+Sadar,Mall Washroom,3.7,7.6,78.5,Yes,522,11,2.6,High,5,3
+Hingna,Hospital Washroom,5.9,4.0,29.9,Yes,846,6,2.4,Medium,7,1
+Manish Nagar,Mall Washroom,8.4,4.9,19.3,Yes,348,5,3.2,Low,8,5
+Nagpur Central,Mall Washroom,5.1,6.0,24.5,Yes,307,3,1.1,Medium,5,1
+Nagpur Central,Transit Washroom,4.7,7.1,54.1,Yes,589,7,4.8,High,3,3
+Nagpur Central,Public Washroom,7.5,3.4,18.0,Yes,58,2,7.9,Low,5,2
+Sitabuldi,Public Washroom,4.8,5.7,50.5,Yes,465,5,19.1,High,8,6
+Wardha Road,Hospital Washroom,8.3,2.7,0.0,No,444,5,19.5,Medium,2,1
+Sadar,Public Washroom,6.2,3.0,51.9,Yes,520,4,5.3,Medium,5,2
+Sitabuldi,Transit Washroom,4.9,7.9,44.6,Yes,148,5,3.1,Medium,4,3
+Sitabuldi,School Washroom,9.1,3.6,0.0,Yes,336,1,8.3,Low,4,6
+Manish Nagar,Mall Washroom,5.8,6.1,49.1,Yes,590,4,23.1,High,1,1
+Dharampeth,Mall Washroom,9.3,1.1,26.2,Yes,303,1,8.7,Low,6,1
+Kamptee Road,School Washroom,7.8,2.7,24.4,Yes,327,2,1.2,Low,8,5
+Kamptee Road,School Washroom,3.8,7.3,42.6,Yes,454,4,6.8,High,2,2
+Wardha Road,Transit Washroom,4.6,6.2,66.5,Yes,376,6,17.5,High,3,3
+Mihan,Office Washroom,8.7,1.0,31.3,Yes,20,1,4.4,Low,1,3
+Civil Lines,Public Washroom,4.3,6.6,77.9,Yes,516,4,9.6,High,4,2
+Nagpur Central,Hospital Washroom,8.5,3.6,29.1,Yes,943,3,0.5,Low,8,6
+Hingna,Public Washroom,3.7,8.5,72.5,Yes,20,8,4.1,High,7,0
+Kamptee Road,Office Washroom,6.3,3.9,26.5,Yes,314,2,1.5,Low,7,1
+Sadar,School Washroom,6.2,3.9,49.2,Yes,431,2,8.4,Medium,4,1
+Civil Lines,Public Washroom,5.8,4.6,59.1,No,413,7,12.4,High,8,0
+Sadar,Transit Washroom,6.4,5.1,31.8,Yes,296,4,15.4,Medium,8,3
+Civil Lines,Transit Washroom,7.0,4.5,66.4,Yes,248,4,12.7,Medium,6,5
+Hingna,Transit Washroom,6.9,1.7,42.3,No,878,6,5.5,Medium,3,1
+Hingna,Office Washroom,7.2,1.0,38.2,No,246,3,2.9,Medium,8,6
+Kamptee Road,School Washroom,6.0,5.8,37.9,Yes,391,5,14.6,Medium,1,4
+Wardha Road,Public Washroom,8.1,4.5,25.5,Yes,436,4,7.8,Low,8,2
+Mihan,Office Washroom,2.9,7.6,88.8,Yes,498,10,0.5,High,4,2
+Mihan,Office Washroom,7.9,3.9,21.7,No,945,7,24.5,High,3,0
+Manish Nagar,Hospital Washroom,5.4,3.7,45.2,Yes,528,3,2.5,Medium,6,6
+Wardha Road,Hospital Washroom,7.0,2.5,37.7,Yes,676,3,13.7,Medium,4,2
+Sadar,Hospital Washroom,4.3,7.6,64.7,Yes,551,5,20.5,High,3,4
+Mihan,School Washroom,5.5,5.7,70.5,Yes,20,4,3.1,Medium,9,1
+Kamptee Road,Public Washroom,8.1,4.9,40.0,Yes,736,2,18.7,Medium,1,5
+Dharampeth,Mall Washroom,5.7,5.6,46.0,Yes,453,5,1.1,Medium,4,2
+Nagpur Central,Transit Washroom,7.2,4.5,32.4,Yes,451,5,20.4,Medium,1,4
+Sitabuldi,Public Washroom,4.9,5.9,57.2,Yes,336,9,0.5,High,8,6
+Mihan,Transit Washroom,8.4,1.8,27.5,Yes,735,3,3.3,Low,7,0
+Dharampeth,School Washroom,5.7,5.4,72.3,Yes,472,5,35.9,High,1,5
+Kamptee Road,Public Washroom,4.7,7.4,61.5,Yes,440,4,5.2,High,2,2
+Kamptee Road,Transit Washroom,7.7,3.7,62.6,Yes,270,3,19.3,Medium,5,6
+Manish Nagar,Office Washroom,5.7,4.6,52.2,Yes,398,6,1.2,Medium,2,0
+Dharampeth,Transit Washroom,3.2,6.3,66.1,Yes,308,5,3.6,High,3,4
+Nagpur Central,Mall Washroom,6.4,3.4,52.7,Yes,522,3,7.0,Medium,6,2
+Dharampeth,Transit Washroom,4.7,5.7,100.0,Yes,106,9,4.2,High,7,1
+Dharampeth,Public Washroom,6.0,5.9,57.9,Yes,507,6,11.5,High,7,5
+Kamptee Road,Transit Washroom,8.0,4.1,30.4,Yes,415,4,1.6,Low,8,1
+Hingna,Public Washroom,5.5,5.5,67.5,Yes,579,6,11.5,High,7,4
+Sitabuldi,Hospital Washroom,6.2,4.5,28.5,No,442,9,8.7,High,3,5
+Mihan,Transit Washroom,5.7,6.7,64.5,Yes,520,7,5.0,High,5,3
+Wardha Road,School Washroom,7.1,2.8,27.7,Yes,650,3,13.8,Medium,7,1
+Sitabuldi,School Washroom,4.6,8.5,84.6,Yes,20,7,2.9,High,6,2
+Manish Nagar,School Washroom,6.0,6.1,45.7,Yes,142,4,2.1,Medium,7,6
+Mihan,Hospital Washroom,3.5,9.8,85.4,Yes,1148,11,10.9,High,4,5
+Sadar,Hospital Washroom,6.9,4.3,35.3,Yes,521,2,1.1,Low,6,4
+Kamptee Road,Public Washroom,4.8,4.5,60.1,No,346,7,4.9,High,8,0
+Wardha Road,Office Washroom,7.7,3.6,19.9,No,124,5,0.7,Medium,5,4
+Dharampeth,Hospital Washroom,6.1,4.6,68.0,Yes,395,6,10.5,Medium,1,1
+Civil Lines,Mall Washroom,6.0,5.4,70.8,Yes,370,4,3.5,Medium,8,2
+Wardha Road,Hospital Washroom,4.7,6.3,66.2,Yes,445,9,24.5,High,3,5
+Wardha Road,Public Washroom,9.4,1.0,37.8,Yes,372,2,9.6,Low,8,3
+Kamptee Road,Office Washroom,5.3,8.0,74.7,Yes,713,9,8.5,High,5,1
+Hingna,School Washroom,10.0,1.0,8.0,Yes,47,1,7.5,Low,4,0
+Civil Lines,Public Washroom,9.0,2.3,27.1,Yes,708,3,9.1,Low,2,0
+Kamptee Road,Mall Washroom,9.5,2.0,0.0,Yes,465,2,8.3,Low,9,1
+Civil Lines,Transit Washroom,5.7,6.5,45.3,Yes,497,6,4.6,Medium,6,1
+Hingna,Transit Washroom,8.9,2.7,25.7,Yes,382,3,8.9,Low,7,5
+Manish Nagar,Office Washroom,7.6,4.4,41.4,Yes,717,6,7.8,Medium,9,1
+Hingna,Transit Washroom,6.4,5.6,69.2,Yes,789,3,5.0,Medium,4,4
+Manish Nagar,Public Washroom,4.2,6.7,58.4,Yes,220,6,5.0,High,4,3
+Civil Lines,Public Washroom,6.6,4.1,59.8,Yes,80,4,10.9,Medium,2,4
+Dharampeth,Mall Washroom,6.1,6.5,64.6,Yes,414,4,10.7,Medium,8,3
+Mihan,Public Washroom,6.9,5.1,19.4,Yes,670,4,3.2,Medium,2,5
+Sadar,Office Washroom,6.6,3.5,49.5,Yes,158,3,9.3,Medium,3,4
+Manish Nagar,Transit Washroom,5.6,6.0,34.5,Yes,320,4,29.0,High,5,5
+Sitabuldi,Mall Washroom,6.0,7.6,69.0,Yes,399,6,24.7,High,5,4
+Sitabuldi,Transit Washroom,2.2,9.5,74.3,Yes,606,6,8.5,High,9,1
+Mihan,School Washroom,4.6,5.0,56.7,Yes,491,4,11.0,Medium,7,2
+Dharampeth,Transit Washroom,8.2,2.8,29.1,Yes,391,0,4.6,Low,7,4
+Wardha Road,Mall Washroom,2.4,10.0,87.8,Yes,200,7,2.5,High,9,6
+Mihan,School Washroom,6.1,4.9,42.8,Yes,450,4,19.9,Medium,3,6
+Dharampeth,Mall Washroom,10.0,1.0,18.3,Yes,751,3,7.9,Low,5,3
+Hingna,Mall Washroom,10.0,1.0,16.5,Yes,387,0,7.4,Low,4,3
+Dharampeth,School Washroom,7.1,4.2,39.4,Yes,516,4,5.5,Medium,6,3
+Manish Nagar,Office Washroom,6.5,4.0,28.5,Yes,767,6,0.8,Medium,7,2
+Mihan,Hospital Washroom,3.8,8.8,81.9,Yes,206,5,0.5,High,3,3
+Dharampeth,Office Washroom,5.4,5.3,34.0,Yes,145,5,14.7,Medium,2,5
+Nagpur Central,Mall Washroom,6.4,2.9,17.6,Yes,806,4,1.1,Low,5,1
+Mihan,School Washroom,7.2,4.4,30.5,Yes,512,5,7.8,Medium,5,6
+Wardha Road,Transit Washroom,8.1,3.9,14.8,No,279,6,32.5,High,8,1
+Sadar,Public Washroom,6.0,4.1,26.3,No,435,7,0.5,Medium,5,4
+Manish Nagar,Public Washroom,10.0,1.0,2.8,Yes,538,0,10.9,Low,3,4
+Manish Nagar,Mall Washroom,7.3,3.1,51.9,Yes,527,2,3.7,Low,2,1
+Dharampeth,Public Washroom,2.1,10.0,83.8,No,594,11,0.9,High,3,1
+Sitabuldi,Hospital Washroom,6.0,4.5,27.0,Yes,686,4,11.5,Medium,5,2
+Manish Nagar,Mall Washroom,8.7,3.9,20.3,Yes,885,3,0.5,Low,2,0
+Wardha Road,Office Washroom,5.0,7.8,53.9,Yes,355,6,14.7,High,3,4
+Nagpur Central,School Washroom,6.4,5.2,24.3,Yes,272,6,5.3,Medium,5,2
+Sadar,Hospital Washroom,7.4,1.7,59.1,Yes,487,3,12.2,Medium,8,0
+Kamptee Road,Public Washroom,6.4,7.5,33.3,Yes,802,5,1.0,Medium,4,5
+Nagpur Central,Hospital Washroom,5.8,5.7,48.3,Yes,344,8,3.0,Medium,8,5
+Kamptee Road,Office Washroom,7.1,5.5,31.6,Yes,719,2,6.7,Medium,4,5
+Wardha Road,Public Washroom,6.5,6.3,69.9,Yes,127,4,8.9,Medium,1,0
+Manish Nagar,Public Washroom,6.5,3.2,42.6,Yes,241,0,30.6,Medium,3,5
+Civil Lines,Public Washroom,8.7,3.2,26.5,Yes,30,3,4.6,Low,2,4
+Hingna,Mall Washroom,3.7,7.2,53.9,Yes,611,8,8.1,High,6,3
+Sitabuldi,Public Washroom,7.6,4.0,22.8,Yes,484,7,1.1,Low,2,2
+Dharampeth,Office Washroom,7.5,4.8,20.1,No,581,6,1.7,Medium,3,1
+Dharampeth,Mall Washroom,7.8,3.6,20.6,Yes,308,2,14.6,Low,3,1
+Kamptee Road,Mall Washroom,6.4,5.8,23.4,Yes,402,5,35.1,High,8,3
+Sitabuldi,Office Washroom,6.8,3.6,38.9,Yes,460,3,0.5,Low,4,4
+Sadar,Mall Washroom,7.2,2.7,23.4,Yes,198,3,2.2,Low,2,1
+Nagpur Central,Office Washroom,6.0,4.4,50.6,No,524,6,0.5,High,8,1
+Manish Nagar,School Washroom,8.2,2.2,25.6,Yes,175,0,4.2,Low,5,3
+Nagpur Central,Public Washroom,9.7,1.6,12.2,Yes,434,2,4.0,Low,9,3
+Wardha Road,School Washroom,6.2,5.5,55.3,Yes,864,6,7.5,Medium,7,2
+Civil Lines,Office Washroom,3.2,6.4,44.0,No,211,9,1.5,High,6,5
+Dharampeth,Office Washroom,9.8,1.6,8.9,Yes,822,0,3.3,Low,3,0
+Civil Lines,School Washroom,5.7,4.7,41.5,Yes,494,4,36.0,High,4,3
+Wardha Road,Transit Washroom,4.2,8.8,69.1,Yes,316,6,12.3,High,1,3
+Sitabuldi,School Washroom,2.4,7.1,73.4,Yes,883,8,5.1,High,6,0
+Sitabuldi,Hospital Washroom,7.0,4.1,36.7,Yes,403,1,3.0,Low,6,2
+Dharampeth,Hospital Washroom,4.1,7.6,68.0,Yes,497,7,5.6,High,7,0
+Wardha Road,Office Washroom,5.6,3.6,40.7,Yes,327,4,27.9,Medium,9,0
+Hingna,Hospital Washroom,4.4,6.2,45.1,No,273,7,8.2,High,3,1
+Sitabuldi,Transit Washroom,6.2,3.7,46.6,Yes,441,6,6.4,Medium,1,5
+Dharampeth,Office Washroom,3.8,6.2,91.0,Yes,364,6,5.1,High,6,4
+Manish Nagar,Office Washroom,5.4,6.5,29.8,Yes,20,4,8.3,Medium,1,1
+Sitabuldi,School Washroom,4.7,6.3,64.9,Yes,438,6,3.7,High,8,0
+Mihan,Public Washroom,4.5,6.6,55.3,Yes,400,4,15.0,High,3,2
+Sitabuldi,Mall Washroom,4.0,7.1,62.5,Yes,422,7,3.1,High,7,6
+Civil Lines,School Washroom,10.0,2.4,24.6,No,402,4,16.8,Medium,3,3
+Manish Nagar,Hospital Washroom,4.5,6.8,66.9,Yes,555,9,9.6,High,5,5
+Sadar,Public Washroom,6.4,5.0,20.3,Yes,246,2,3.4,Low,9,3
+Mihan,School Washroom,7.1,4.7,39.5,Yes,798,6,2.8,Medium,7,3
+Mihan,Hospital Washroom,7.6,2.8,24.9,Yes,260,3,3.6,Low,8,4
+Kamptee Road,School Washroom,6.9,4.3,50.8,Yes,434,2,0.7,Low,6,4
+Civil Lines,Office Washroom,8.9,1.8,0.0,Yes,290,0,4.1,Low,9,1
+Dharampeth,School Washroom,5.6,4.9,52.4,No,372,6,17.3,High,3,1
+Civil Lines,Hospital Washroom,9.0,5.3,46.1,Yes,360,4,4.1,Low,3,1
+Kamptee Road,School Washroom,6.3,3.8,65.7,Yes,669,6,6.0,Medium,5,4
+Dharampeth,Transit Washroom,6.7,4.2,36.0,Yes,151,4,0.9,Low,2,5
+Civil Lines,Transit Washroom,8.4,3.0,2.2,Yes,759,0,2.3,Low,9,6
+Nagpur Central,Mall Washroom,5.2,5.9,39.3,Yes,604,3,3.9,Medium,5,5
+Dharampeth,Office Washroom,8.8,1.2,24.5,Yes,225,4,2.8,Low,9,2
+Hingna,Mall Washroom,9.8,3.8,0.0,Yes,573,1,4.0,Low,4,6
+Sitabuldi,Transit Washroom,5.4,4.0,55.0,Yes,795,6,0.5,Medium,7,6
+Manish Nagar,Hospital Washroom,6.7,4.1,51.0,Yes,819,1,2.2,Medium,4,6
+Sitabuldi,School Washroom,7.5,4.2,19.6,Yes,469,3,3.5,Low,8,0
+Civil Lines,Office Washroom,4.9,5.5,73.3,Yes,829,6,8.8,High,3,2
+Mihan,Office Washroom,8.2,4.0,12.4,Yes,402,4,0.5,Low,1,0
+Hingna,Hospital Washroom,4.9,4.7,68.6,Yes,438,8,2.7,High,8,2
+Kamptee Road,Mall Washroom,5.8,4.3,52.3,Yes,125,4,6.6,Medium,1,6
+Wardha Road,Hospital Washroom,10.0,1.0,0.0,Yes,318,0,8.6,Low,5,4
+Civil Lines,School Washroom,6.6,4.3,64.6,No,392,8,10.9,High,1,4
+Civil Lines,Mall Washroom,4.9,4.4,54.2,No,114,6,2.3,High,1,0
+Wardha Road,Transit Washroom,7.3,6.1,35.5,Yes,353,1,7.6,Medium,9,1
+Wardha Road,Mall Washroom,6.0,5.8,38.2,Yes,194,4,4.8,Medium,4,5
+Civil Lines,Hospital Washroom,3.4,8.6,78.4,Yes,293,10,3.0,High,5,3
+Hingna,Transit Washroom,5.5,5.6,71.2,Yes,533,5,7.3,High,3,1
+Sitabuldi,Hospital Washroom,6.6,4.3,47.1,Yes,525,5,3.9,Medium,8,6
+Sitabuldi,Transit Washroom,7.2,3.2,48.2,No,526,8,2.8,Medium,4,5
+Hingna,School Washroom,7.1,4.0,21.9,Yes,688,5,7.5,Medium,7,6
+Sadar,Office Washroom,6.0,5.2,52.2,Yes,631,5,2.9,Medium,1,5
+Manish Nagar,Hospital Washroom,5.3,5.3,42.2,Yes,211,6,1.4,Medium,1,5
+Sitabuldi,School Washroom,4.2,7.2,49.4,Yes,394,8,1.1,High,4,1
+Wardha Road,Mall Washroom,6.3,5.6,46.5,No,441,8,5.3,High,3,3
+Nagpur Central,Mall Washroom,6.1,4.6,54.8,Yes,311,7,0.5,Medium,1,6
+Manish Nagar,School Washroom,6.3,5.8,55.4,Yes,424,7,1.7,Medium,1,0
+Manish Nagar,Public Washroom,4.9,4.5,55.5,Yes,727,8,13.3,High,3,0
+Hingna,Hospital Washroom,8.3,3.0,11.3,Yes,502,0,27.1,Low,7,4
+Civil Lines,Mall Washroom,7.7,4.7,50.8,Yes,250,4,2.0,Low,2,3
+Mihan,Hospital Washroom,6.5,1.3,44.8,Yes,744,5,17.6,Medium,4,2
+Dharampeth,Public Washroom,6.3,5.1,56.3,Yes,20,3,3.3,Medium,3,6
+Dharampeth,Hospital Washroom,4.6,7.1,61.1,Yes,208,9,23.3,High,5,0
+Dharampeth,Office Washroom,6.9,3.3,10.8,Yes,758,5,3.7,Low,3,4
+Sitabuldi,Transit Washroom,3.7,7.2,64.1,No,552,11,6.7,High,8,3
+Hingna,School Washroom,5.1,6.7,77.0,Yes,490,8,27.2,High,2,4
+Wardha Road,Transit Washroom,9.5,2.5,19.6,Yes,336,0,10.9,Low,4,5
+Nagpur Central,Mall Washroom,3.5,7.2,87.5,Yes,612,7,3.2,High,1,2
+Sadar,Hospital Washroom,4.7,7.7,53.0,Yes,297,6,10.4,High,6,6
+Dharampeth,School Washroom,7.0,3.9,42.4,Yes,741,1,2.0,Low,8,1
+Dharampeth,Transit Washroom,7.3,3.1,38.6,Yes,371,3,4.0,Low,1,3
+Mihan,Hospital Washroom,9.0,1.6,34.9,Yes,249,0,4.6,Low,4,5
+Nagpur Central,Hospital Washroom,9.4,1.0,10.2,Yes,237,0,0.9,Low,4,4
+Dharampeth,Hospital Washroom,4.7,7.8,65.1,Yes,166,7,0.8,High,7,2
+Dharampeth,School Washroom,5.1,5.3,50.3,No,239,9,11.4,High,6,1
+Nagpur Central,Transit Washroom,9.0,2.5,17.6,No,330,3,4.6,Low,9,6
+Civil Lines,Office Washroom,5.2,5.7,37.5,Yes,20,3,11.4,Medium,4,2
+Manish Nagar,School Washroom,6.3,4.0,30.9,No,623,4,5.3,Medium,5,4
+Kamptee Road,Hospital Washroom,9.9,4.5,4.5,Yes,581,3,9.0,Low,6,2
+Kamptee Road,Transit Washroom,5.3,2.7,48.0,Yes,320,3,2.6,Medium,4,3
+Kamptee Road,Hospital Washroom,8.7,1.9,12.1,Yes,279,3,6.3,Low,8,6
+Manish Nagar,Mall Washroom,7.8,2.3,38.4,Yes,438,4,0.5,Low,3,1
+Dharampeth,Transit Washroom,6.9,4.1,66.7,Yes,326,7,0.5,Medium,8,3
+Nagpur Central,School Washroom,8.5,1.0,40.7,Yes,157,2,2.0,Low,5,3
+Sadar,Transit Washroom,3.1,5.4,96.9,No,323,12,0.5,High,5,5
+Sadar,Hospital Washroom,9.0,1.0,11.6,Yes,485,0,9.3,Low,4,5
+Hingna,Hospital Washroom,8.3,1.0,40.0,Yes,778,2,1.0,Low,1,2
+Civil Lines,Public Washroom,5.5,5.3,43.2,Yes,344,5,9.3,Medium,6,0
+Wardha Road,Transit Washroom,7.3,4.0,16.9,Yes,307,5,6.0,Low,2,5
+Wardha Road,Hospital Washroom,6.6,5.2,57.7,Yes,538,6,5.8,Medium,4,0
+Dharampeth,Mall Washroom,7.1,3.3,45.6,Yes,20,2,13.0,Low,1,0
+Hingna,Hospital Washroom,5.6,6.2,32.0,Yes,45,5,0.5,Medium,2,5
+Mihan,Public Washroom,5.2,4.8,52.3,No,523,7,12.2,High,8,0
+Sadar,Mall Washroom,5.6,7.2,49.1,Yes,512,6,26.7,High,2,1
+Dharampeth,Mall Washroom,4.1,6.3,58.1,Yes,506,5,13.2,High,8,1
+Manish Nagar,School Washroom,6.2,4.5,45.4,Yes,370,4,1.5,Medium,4,0
+Civil Lines,Public Washroom,7.1,2.5,50.9,Yes,757,4,5.7,Medium,2,0
+Hingna,School Washroom,6.2,4.3,52.2,Yes,384,6,2.7,Medium,8,3
+Sitabuldi,Hospital Washroom,8.1,3.0,26.0,Yes,498,5,12.0,Low,6,0
+Nagpur Central,Public Washroom,4.5,3.9,67.8,Yes,88,3,22.4,Medium,3,3
+Sadar,School Washroom,5.6,4.2,45.4,Yes,559,5,10.1,Medium,6,4
+Kamptee Road,School Washroom,9.5,1.0,22.1,Yes,539,3,2.2,Low,1,2
+Wardha Road,Office Washroom,8.3,2.4,23.0,Yes,429,3,6.5,Low,6,4
+Civil Lines,Transit Washroom,5.7,4.5,49.5,Yes,511,4,5.0,Medium,3,4
+Manish Nagar,Hospital Washroom,8.9,1.4,31.1,Yes,595,2,1.9,Low,8,2
+Manish Nagar,Office Washroom,8.5,4.1,36.7,Yes,259,2,2.7,Low,2,2
+Civil Lines,Transit Washroom,6.0,5.7,42.2,Yes,181,2,16.7,Medium,1,4
+Hingna,Office Washroom,4.3,7.7,78.0,Yes,275,4,36.0,High,7,1
+Kamptee Road,Public Washroom,7.0,5.3,27.2,Yes,602,5,0.7,Medium,7,0
+Mihan,Hospital Washroom,4.5,4.3,68.2,Yes,145,4,5.4,Medium,3,0
+Hingna,School Washroom,6.8,6.3,46.8,Yes,415,5,8.3,Medium,7,5
+Civil Lines,Transit Washroom,6.4,1.0,33.4,Yes,508,1,25.9,Low,5,4
+Hingna,Office Washroom,5.3,4.6,48.5,Yes,29,3,0.6,Medium,5,5
+Sadar,Public Washroom,4.6,6.3,71.5,Yes,242,5,7.0,High,3,3
+Hingna,Hospital Washroom,6.4,3.5,43.4,Yes,594,6,12.7,Medium,4,1
+Sitabuldi,Mall Washroom,6.0,3.5,38.5,Yes,450,4,13.4,Medium,3,1
+Civil Lines,Transit Washroom,6.5,1.8,41.2,Yes,679,7,5.5,Medium,7,0
+Sitabuldi,Office Washroom,3.9,5.1,63.3,No,25,7,1.8,High,9,4
+Sitabuldi,Mall Washroom,5.1,6.8,39.5,Yes,489,4,8.1,Medium,5,5
+Hingna,Office Washroom,4.7,3.6,55.4,Yes,382,7,1.1,Medium,9,2
+Dharampeth,School Washroom,6.6,3.8,37.2,No,64,4,5.7,Medium,3,0
+Kamptee Road,School Washroom,4.2,4.4,63.5,No,427,7,8.5,High,1,4
+Hingna,Office Washroom,7.2,4.1,62.2,Yes,214,5,10.1,Medium,2,4
+Civil Lines,Transit Washroom,6.3,6.9,50.2,Yes,380,5,5.9,Medium,1,6
+Hingna,Mall Washroom,6.6,4.5,43.7,Yes,356,3,3.4,Medium,3,5
+Sitabuldi,Hospital Washroom,5.1,5.4,38.5,Yes,366,4,36.0,High,9,5
+Dharampeth,Mall Washroom,7.2,2.4,31.4,No,94,4,3.8,Medium,3,3
+Sitabuldi,School Washroom,6.8,6.5,46.9,Yes,398,5,11.6,Medium,1,1
+Manish Nagar,Office Washroom,3.9,7.2,66.6,Yes,736,10,4.3,High,2,0
+Sitabuldi,Mall Washroom,4.6,7.7,55.4,Yes,20,5,8.0,High,1,4
+Civil Lines,Office Washroom,10.0,1.0,12.1,Yes,671,0,1.6,Low,4,2
+Civil Lines,Office Washroom,5.6,4.3,30.2,Yes,20,2,2.4,Low,7,0
+Wardha Road,Hospital Washroom,8.1,1.0,26.6,Yes,581,3,13.3,Low,6,6
+Manish Nagar,Hospital Washroom,7.1,7.2,24.4,Yes,492,2,1.4,Medium,9,1
+Hingna,Transit Washroom,6.3,6.9,37.1,No,716,6,6.4,High,8,5
+Dharampeth,School Washroom,5.0,6.1,44.1,Yes,751,7,17.0,High,5,2
+Manish Nagar,Office Washroom,4.7,3.5,26.2,Yes,454,6,23.3,Medium,1,0
+Sitabuldi,Mall Washroom,6.0,6.3,47.9,Yes,228,4,1.5,Medium,5,0
+Sadar,Office Washroom,7.6,2.2,5.6,Yes,541,5,15.5,Low,4,3
+Kamptee Road,Public Washroom,8.2,1.0,13.2,Yes,730,4,0.6,Low,1,6
+Mihan,Office Washroom,5.8,5.9,38.8,Yes,794,3,6.4,Medium,5,3
+Kamptee Road,Hospital Washroom,10.0,1.0,10.1,Yes,583,1,0.5,Low,1,5
+Nagpur Central,Mall Washroom,4.3,5.1,76.5,Yes,766,6,4.6,High,1,0
+Wardha Road,Office Washroom,7.0,5.7,30.2,Yes,699,4,6.0,Medium,6,3
+Civil Lines,Office Washroom,8.5,1.6,25.6,Yes,129,4,2.5,Low,4,4
+Mihan,Public Washroom,9.3,1.4,27.1,Yes,106,2,6.1,Low,3,2
+Manish Nagar,Hospital Washroom,5.4,6.3,68.2,No,585,7,9.6,High,9,0
+Wardha Road,Hospital Washroom,4.1,6.3,47.9,Yes,630,4,12.6,High,8,2
+Civil Lines,Transit Washroom,6.8,3.1,54.6,No,427,7,1.0,Medium,4,6
+Hingna,Transit Washroom,5.0,4.7,68.4,Yes,406,6,5.4,Medium,2,1
+Dharampeth,Public Washroom,4.4,6.2,81.7,Yes,627,9,3.1,High,7,0
+Civil Lines,Transit Washroom,7.1,4.7,33.4,Yes,596,4,7.8,Medium,7,6
+Sadar,Office Washroom,8.4,3.9,23.3,Yes,781,3,8.1,Low,2,1
+Manish Nagar,Transit Washroom,5.7,5.7,65.3,Yes,333,0,11.1,Medium,2,0
+Sitabuldi,Transit Washroom,5.5,6.6,69.4,No,369,10,2.5,High,3,4
+Kamptee Road,School Washroom,6.6,4.1,28.2,Yes,56,5,4.8,Low,5,2
+Kamptee Road,Mall Washroom,6.0,7.1,73.6,Yes,225,4,10.4,Medium,8,1
+Nagpur Central,Public Washroom,5.4,4.7,43.4,Yes,654,4,4.4,Medium,6,4
+Mihan,Hospital Washroom,7.5,1.3,31.1,Yes,367,4,8.7,Low,9,2
+Sadar,Office Washroom,8.4,2.7,23.7,Yes,583,1,3.5,Low,7,2
+Manish Nagar,Mall Washroom,7.7,2.9,13.0,Yes,446,3,7.4,Low,5,2
+Civil Lines,School Washroom,6.2,2.4,22.8,Yes,654,2,2.6,Low,5,2
+Sitabuldi,Mall Washroom,4.4,6.7,65.0,Yes,292,6,0.8,High,5,0
+Mihan,Mall Washroom,6.2,4.9,48.2,Yes,450,5,4.1,Medium,7,4
+Kamptee Road,School Washroom,4.2,7.1,52.1,Yes,501,6,11.2,High,2,4
+Sadar,Mall Washroom,8.1,5.4,29.1,Yes,645,3,27.5,Medium,8,5
+Manish Nagar,Hospital Washroom,4.6,7.3,60.3,Yes,700,8,1.8,High,7,6
+Sadar,Public Washroom,8.1,4.7,28.5,Yes,152,2,4.9,Low,1,1
+Nagpur Central,Public Washroom,8.1,3.0,44.0,Yes,510,1,3.8,Low,5,1
+Nagpur Central,Public Washroom,3.9,6.1,63.8,Yes,311,4,2.1,Medium,6,1
+Mihan,Mall Washroom,6.4,4.1,50.8,Yes,628,6,2.9,Medium,6,5
+Sadar,Transit Washroom,7.4,5.5,30.7,No,522,5,5.0,Medium,9,1
+Dharampeth,Transit Washroom,7.0,4.5,50.9,Yes,364,7,18.4,Medium,3,1
+Civil Lines,Hospital Washroom,7.3,4.6,35.2,Yes,639,3,7.6,Medium,1,5
+Kamptee Road,Office Washroom,7.2,4.0,27.0,Yes,280,1,3.7,Low,9,5
+Sadar,Public Washroom,5.1,5.2,51.8,Yes,347,5,0.5,Medium,1,5
+Nagpur Central,Hospital Washroom,5.5,4.9,53.1,Yes,596,3,5.6,Medium,5,1
+Wardha Road,Transit Washroom,7.0,6.0,70.4,Yes,470,6,19.8,High,2,6
+Dharampeth,Hospital Washroom,4.5,6.4,32.1,Yes,450,5,7.2,Medium,1,2
+Kamptee Road,Mall Washroom,7.6,3.8,27.2,Yes,417,4,3.7,Low,4,3
+Dharampeth,Office Washroom,9.0,1.0,12.7,Yes,137,0,9.1,Low,8,4
+Wardha Road,School Washroom,7.0,2.4,18.5,Yes,420,6,6.9,Low,6,1
+Wardha Road,School Washroom,4.7,6.4,44.9,Yes,210,4,1.8,Medium,5,0
+Sadar,Office Washroom,4.6,6.8,54.7,Yes,20,6,5.5,Medium,6,2
+Dharampeth,Public Washroom,6.3,4.9,43.0,Yes,364,3,6.1,Medium,3,5
+Dharampeth,Mall Washroom,5.3,5.9,51.5,Yes,889,5,2.2,Medium,4,2
+Civil Lines,Mall Washroom,8.7,1.6,38.0,Yes,706,1,12.8,Low,2,2
+Dharampeth,Office Washroom,5.4,7.6,48.4,Yes,388,4,11.1,Medium,8,6
+Wardha Road,Transit Washroom,9.3,1.7,0.0,No,222,2,0.5,Low,1,3
+Dharampeth,Office Washroom,4.8,5.7,56.2,Yes,309,8,36.0,High,9,2
+Manish Nagar,Public Washroom,5.8,3.1,60.0,Yes,301,6,10.3,Medium,7,4
+Sadar,Public Washroom,4.8,7.0,51.2,Yes,77,4,1.7,Medium,5,3
+Wardha Road,Office Washroom,7.9,3.0,45.7,Yes,334,3,4.0,Low,7,1
+Mihan,Public Washroom,5.3,7.3,66.1,No,458,10,7.2,High,3,0
+Sadar,Transit Washroom,6.3,5.5,40.6,Yes,627,7,0.7,Medium,1,2
+Kamptee Road,Office Washroom,9.8,1.0,14.8,Yes,396,0,0.9,Low,4,5
+Hingna,Transit Washroom,6.5,5.0,59.8,Yes,76,4,1.1,Medium,1,5
+Dharampeth,School Washroom,8.3,1.8,27.1,Yes,507,2,8.9,Low,1,0
+Sadar,School Washroom,8.5,1.5,8.0,No,362,5,2.6,Low,7,4
+Nagpur Central,Office Washroom,3.4,7.5,84.7,Yes,286,8,0.7,High,1,0
+Manish Nagar,Office Washroom,10.0,2.0,6.4,Yes,428,0,8.6,Low,7,2
+Sadar,Office Washroom,10.0,1.0,11.2,Yes,507,5,3.7,Low,5,6
+Hingna,Office Washroom,6.4,3.9,56.1,Yes,396,2,8.5,Medium,4,0
+Sitabuldi,Hospital Washroom,4.6,5.8,53.3,Yes,707,5,1.1,Medium,4,1
+Wardha Road,Public Washroom,4.3,5.7,35.6,No,20,9,11.0,High,3,6
+Hingna,Hospital Washroom,2.1,7.8,92.1,Yes,560,9,9.7,High,7,4
+Sitabuldi,Office Washroom,2.5,5.7,90.9,No,590,10,11.3,High,2,1
+Mihan,Office Washroom,10.0,1.6,0.0,Yes,228,0,6.8,Low,2,1
+Sitabuldi,Office Washroom,6.8,2.4,40.5,Yes,127,5,5.1,Low,3,3
+Dharampeth,Office Washroom,6.7,5.6,73.0,No,332,7,1.9,High,4,2
+Hingna,School Washroom,5.3,9.1,36.3,Yes,235,5,4.6,Medium,5,3
+Kamptee Road,Public Washroom,6.8,2.4,50.9,Yes,116,1,21.0,Medium,1,1
+Kamptee Road,School Washroom,5.4,3.3,61.3,Yes,695,5,3.8,Medium,1,2
+Manish Nagar,Transit Washroom,3.7,7.1,79.8,Yes,485,8,2.7,High,8,2
+Dharampeth,Office Washroom,4.5,8.2,51.1,No,121,9,0.7,High,9,0
+Mihan,Public Washroom,7.2,1.0,34.7,Yes,318,3,4.5,Low,4,1
+Mihan,Mall Washroom,8.7,2.3,45.2,No,530,3,1.0,Medium,2,5
+Wardha Road,Transit Washroom,4.9,7.3,39.4,Yes,689,5,22.4,High,3,6
+Manish Nagar,Mall Washroom,7.7,5.1,12.5,Yes,661,5,0.5,Low,6,6
+Mihan,School Washroom,6.6,3.0,37.7,Yes,351,3,1.7,Low,8,6
+Mihan,Public Washroom,5.4,5.5,53.0,No,452,10,4.8,High,7,2
+Wardha Road,Public Washroom,6.2,4.7,54.5,Yes,310,5,12.9,Medium,1,3
+Hingna,Office Washroom,7.6,3.6,36.4,Yes,272,2,0.7,Low,2,2
+Nagpur Central,Public Washroom,7.2,4.7,25.7,Yes,140,5,6.2,Low,7,5
+Manish Nagar,School Washroom,5.7,5.4,38.4,No,588,6,13.9,High,2,1
+Mihan,Mall Washroom,8.3,4.2,24.7,Yes,696,2,8.9,Low,2,5
+Sitabuldi,Transit Washroom,5.8,4.1,19.6,No,360,9,2.9,High,7,2
+Dharampeth,Public Washroom,4.3,6.1,52.3,Yes,241,4,7.1,Medium,1,3
+Wardha Road,Hospital Washroom,1.3,7.4,95.8,Yes,510,11,4.0,High,1,5
+Nagpur Central,Public Washroom,3.9,6.4,76.3,Yes,440,6,11.7,High,6,0
+Wardha Road,Mall Washroom,8.5,2.0,13.7,Yes,390,1,1.4,Low,6,4
+Hingna,Mall Washroom,4.3,6.9,70.7,Yes,456,9,4.6,High,8,1
+Wardha Road,Public Washroom,3.4,9.1,77.3,Yes,307,6,0.5,High,6,4
+Manish Nagar,Mall Washroom,7.9,2.9,70.3,Yes,552,2,13.9,Medium,3,6
+Sadar,Transit Washroom,5.6,6.7,34.4,Yes,815,7,3.5,Medium,6,3
+Sitabuldi,Office Washroom,6.1,5.5,52.4,No,57,9,4.4,High,9,0
+Kamptee Road,Mall Washroom,6.7,3.5,55.3,Yes,357,5,11.0,Medium,2,4
+Wardha Road,School Washroom,7.7,3.3,46.2,Yes,479,3,0.9,Low,2,5
+Wardha Road,Office Washroom,6.9,4.6,35.7,Yes,428,3,10.7,Medium,4,5
+Sadar,Transit Washroom,6.9,5.1,33.5,Yes,645,4,1.2,Medium,2,6
+Manish Nagar,Transit Washroom,6.7,3.6,51.6,Yes,379,3,2.1,Medium,2,4
+Sitabuldi,Mall Washroom,8.2,1.8,31.4,No,446,5,0.5,Medium,7,0
+Kamptee Road,Public Washroom,6.9,2.7,29.2,Yes,334,1,2.8,Low,4,6
+Mihan,Office Washroom,9.5,1.1,9.2,Yes,455,0,18.9,Low,8,3
+Wardha Road,School Washroom,6.8,4.9,38.3,No,419,8,1.5,High,6,4
+Hingna,Mall Washroom,5.7,5.3,62.8,Yes,593,4,2.5,Medium,2,6
+Sadar,Transit Washroom,8.4,2.9,14.5,Yes,501,0,3.8,Low,7,4
+Kamptee Road,Mall Washroom,6.4,5.4,39.3,Yes,438,0,8.9,Medium,6,3
+Wardha Road,Transit Washroom,8.6,2.6,45.2,Yes,690,2,5.0,Low,8,2
+Mihan,Mall Washroom,8.1,3.7,24.0,Yes,639,1,8.7,Low,6,2
+Sitabuldi,Mall Washroom,4.4,6.3,57.2,Yes,791,4,7.6,High,1,3
+Hingna,Mall Washroom,7.8,4.5,17.6,Yes,614,2,8.6,Low,6,4
+Manish Nagar,Public Washroom,8.7,3.5,22.3,Yes,1074,3,3.9,Low,3,5
+Hingna,Mall Washroom,4.8,7.4,79.4,Yes,542,9,3.3,High,5,4
+Mihan,Office Washroom,3.5,6.0,60.0,Yes,234,7,1.8,High,3,0
+Nagpur Central,Office Washroom,7.1,5.1,61.9,Yes,237,4,36.0,High,2,4
+Mihan,Mall Washroom,5.5,5.2,36.6,Yes,522,5,7.7,Medium,8,5
+Civil Lines,School Washroom,4.8,5.4,65.9,Yes,667,5,4.5,High,1,6
+Civil Lines,School Washroom,7.4,4.1,27.0,Yes,195,4,3.4,Low,1,1
+Mihan,Transit Washroom,6.1,4.3,25.8,Yes,469,8,9.9,Medium,5,6
+Kamptee Road,Transit Washroom,5.8,7.6,63.7,Yes,73,5,24.2,High,2,0
+Wardha Road,Hospital Washroom,6.2,5.2,32.7,Yes,747,2,5.4,Medium,8,1
+Mihan,Transit Washroom,7.0,3.9,42.6,No,428,4,6.2,Medium,2,6
+Manish Nagar,Office Washroom,6.7,4.7,67.1,Yes,405,6,2.5,Medium,5,5
+Mihan,Hospital Washroom,7.5,2.7,27.0,Yes,413,1,18.1,Low,3,3
+Civil Lines,Office Washroom,6.9,3.2,35.0,Yes,188,3,14.9,Medium,3,0
+Sadar,Transit Washroom,7.1,5.0,18.2,Yes,189,4,9.7,Low,3,4
+Hingna,Mall Washroom,6.2,3.6,31.5,Yes,142,2,1.4,Low,4,3
+Hingna,Mall Washroom,7.4,3.2,20.1,Yes,453,3,19.7,Medium,8,1
+Wardha Road,Hospital Washroom,5.5,7.0,58.6,Yes,402,7,3.3,High,5,2
+Kamptee Road,Hospital Washroom,4.2,6.7,70.5,Yes,136,8,10.4,High,4,4
+Wardha Road,Office Washroom,3.8,3.5,67.0,Yes,459,4,0.5,Medium,8,0
+Civil Lines,Mall Washroom,7.6,3.2,23.1,Yes,374,2,6.8,Low,4,2
+Dharampeth,Mall Washroom,9.8,3.5,30.1,Yes,584,0,10.8,Low,4,6
+Wardha Road,Hospital Washroom,3.7,7.7,79.4,Yes,644,8,36.0,High,8,4
+Dharampeth,School Washroom,6.8,4.6,43.1,Yes,216,5,0.5,Medium,8,4
+Sadar,Transit Washroom,6.0,5.9,46.8,Yes,365,4,5.8,Medium,8,6
+Sitabuldi,Mall Washroom,3.8,5.0,66.4,Yes,329,6,6.4,High,9,5
+Kamptee Road,Mall Washroom,8.5,1.0,0.4,Yes,394,3,17.6,Low,1,4
+Dharampeth,Transit Washroom,8.5,1.9,0.7,Yes,595,2,11.5,Low,9,4
+Wardha Road,Transit Washroom,6.4,1.0,34.9,Yes,405,4,36.0,Medium,2,0
+Manish Nagar,Mall Washroom,7.4,2.7,48.2,Yes,117,0,1.7,Low,4,2
+Sitabuldi,Public Washroom,4.7,5.8,63.9,Yes,20,5,4.3,Medium,4,2
+Nagpur Central,Public Washroom,7.5,5.4,21.0,Yes,289,2,5.8,Low,8,2
+Kamptee Road,Office Washroom,8.6,1.8,35.4,Yes,304,2,8.0,Low,8,6
+Sitabuldi,Public Washroom,6.3,3.8,65.8,Yes,586,6,0.5,Medium,5,1
+Dharampeth,Public Washroom,4.9,6.3,61.9,Yes,495,4,1.4,Medium,2,0
+Dharampeth,Mall Washroom,3.0,8.0,79.6,Yes,820,10,12.5,High,6,1
+Dharampeth,Public Washroom,6.1,4.3,43.6,Yes,530,2,6.7,Medium,6,6
+Sitabuldi,Public Washroom,5.9,7.3,55.5,Yes,614,5,2.1,Medium,7,6
+Hingna,Mall Washroom,5.9,5.5,45.0,Yes,738,4,6.8,Medium,5,1
+Civil Lines,Office Washroom,7.6,1.3,30.2,Yes,290,0,5.6,Low,1,1
+Sadar,Public Washroom,8.8,1.8,3.9,Yes,516,0,4.1,Low,5,4
+Manish Nagar,Public Washroom,10.0,1.0,0.0,No,132,1,5.3,Low,4,4
+Nagpur Central,Mall Washroom,7.0,4.8,62.4,Yes,674,4,1.5,Medium,1,4
+Sitabuldi,Public Washroom,5.5,6.2,52.3,No,734,9,4.5,High,4,2
+Wardha Road,Office Washroom,6.8,3.6,41.5,No,377,5,3.0,Medium,4,6
+Nagpur Central,School Washroom,6.7,3.2,60.4,Yes,638,5,3.5,Medium,9,6
+Manish Nagar,Office Washroom,8.5,4.3,50.9,Yes,339,3,9.5,Low,7,4
+Manish Nagar,Transit Washroom,6.2,5.1,35.9,Yes,355,2,4.7,Medium,4,3
+Dharampeth,School Washroom,8.0,4.3,50.8,No,669,6,6.0,Medium,4,1
+Sadar,Hospital Washroom,7.8,2.0,50.5,Yes,421,3,2.5,Low,5,3
+Nagpur Central,Public Washroom,3.3,6.9,76.3,No,889,10,17.1,High,8,6
+Sadar,Public Washroom,9.5,1.4,1.8,Yes,423,1,12.4,Low,9,4
+Nagpur Central,School Washroom,5.6,5.2,50.8,Yes,541,5,2.6,Medium,2,0
+Sitabuldi,Hospital Washroom,5.9,4.4,31.3,Yes,502,3,28.1,Medium,7,0
+Manish Nagar,School Washroom,6.6,3.0,27.0,Yes,278,2,8.8,Low,1,5
+Kamptee Road,Mall Washroom,6.5,2.5,44.0,Yes,243,2,8.7,Low,1,3
+Kamptee Road,Mall Washroom,5.2,5.5,58.6,Yes,367,5,3.4,Medium,2,2
+Sadar,Hospital Washroom,6.6,3.7,33.7,Yes,665,4,10.0,Medium,4,5
+Kamptee Road,Transit Washroom,2.6,7.8,87.4,Yes,416,8,3.2,High,9,6
+Sadar,School Washroom,7.4,2.3,9.8,No,348,4,4.5,Medium,2,1
+Sitabuldi,School Washroom,8.5,3.6,32.8,Yes,515,2,1.4,Low,2,4
+Mihan,Mall Washroom,7.2,4.5,40.1,Yes,416,5,8.6,Medium,8,1
+Hingna,Transit Washroom,5.5,4.8,43.3,Yes,540,4,22.1,Medium,6,6
+Manish Nagar,Office Washroom,4.9,7.7,49.2,Yes,691,5,13.8,High,3,0
+Mihan,Office Washroom,6.9,4.3,30.2,Yes,329,6,1.2,Medium,5,1
+Sadar,Public Washroom,5.6,4.9,42.9,Yes,399,7,9.2,Medium,3,1
+Wardha Road,Hospital Washroom,4.5,7.6,64.6,Yes,420,7,6.2,High,1,6
+Wardha Road,Office Washroom,7.6,4.5,50.7,Yes,388,6,0.5,Medium,8,6
+Civil Lines,Mall Washroom,5.0,8.1,57.6,No,261,11,4.8,High,5,4
+Manish Nagar,Public Washroom,7.9,4.4,43.5,Yes,298,4,9.9,Medium,3,6
+Manish Nagar,Office Washroom,5.8,3.2,65.4,Yes,491,5,7.7,Medium,4,4
+Wardha Road,School Washroom,8.7,2.5,4.0,Yes,540,2,5.4,Low,1,3
+Kamptee Road,Public Washroom,8.0,4.5,52.0,Yes,304,4,3.2,Low,8,0
+Sitabuldi,Transit Washroom,7.2,6.5,36.4,Yes,202,3,1.3,Medium,8,5
+Dharampeth,Public Washroom,2.4,8.0,75.9,Yes,697,8,3.1,High,7,6
+Manish Nagar,Transit Washroom,2.9,9.7,60.6,Yes,573,8,10.6,High,7,2
+Nagpur Central,Public Washroom,7.3,1.3,37.8,Yes,209,2,10.1,Low,4,5
+Nagpur Central,Public Washroom,7.3,4.6,23.7,Yes,188,3,8.2,Low,5,2
+Manish Nagar,Mall Washroom,7.6,3.5,17.4,No,260,5,4.9,Medium,8,2
+Wardha Road,School Washroom,4.4,3.4,68.0,Yes,236,5,0.5,Medium,3,0
+Nagpur Central,Hospital Washroom,8.9,2.6,16.7,Yes,397,3,18.2,Low,7,3
+Wardha Road,Mall Washroom,5.7,7.1,58.8,Yes,497,5,10.9,High,6,0
+Nagpur Central,Office Washroom,5.7,5.6,40.1,Yes,253,6,3.2,Medium,3,6
+Kamptee Road,Transit Washroom,4.6,6.3,47.9,No,449,9,0.8,High,4,1
+Mihan,Public Washroom,7.5,2.3,2.4,Yes,350,0,12.2,Low,8,6
+Sitabuldi,Mall Washroom,7.1,4.4,51.0,Yes,452,0,1.1,Low,6,3
+Sitabuldi,Office Washroom,8.4,1.9,48.2,Yes,663,5,8.7,Low,6,6
+Nagpur Central,Mall Washroom,6.9,4.5,31.0,Yes,71,3,11.2,Low,2,2
+Dharampeth,Transit Washroom,5.8,4.7,49.4,Yes,428,5,8.3,Medium,2,3
+Wardha Road,Office Washroom,7.5,6.2,39.7,Yes,617,7,14.0,Medium,6,6
+Kamptee Road,Office Washroom,4.7,7.7,40.4,Yes,347,6,12.8,High,1,3
+Wardha Road,Mall Washroom,5.4,2.3,64.5,Yes,754,8,9.7,Medium,9,1
+Kamptee Road,Office Washroom,4.4,5.4,54.4,No,516,10,3.6,High,4,0
+Dharampeth,Hospital Washroom,3.7,8.5,62.5,Yes,656,6,5.1,High,1,2
+Kamptee Road,School Washroom,7.6,2.1,34.1,Yes,400,0,13.8,Low,4,6
+Dharampeth,School Washroom,5.5,8.0,54.5,Yes,507,5,4.8,High,9,2
+Sitabuldi,Public Washroom,5.3,3.9,62.1,Yes,568,6,6.7,Medium,2,6
+Hingna,Hospital Washroom,5.6,6.1,59.9,Yes,833,4,2.0,Medium,5,2
+Dharampeth,Hospital Washroom,7.4,1.9,38.3,Yes,252,3,11.0,Low,2,2
+Hingna,Transit Washroom,5.0,6.1,60.2,Yes,410,5,13.3,High,4,3
+Mihan,Office Washroom,6.4,4.3,37.1,Yes,502,4,10.4,Medium,9,3
+Dharampeth,School Washroom,5.8,6.7,32.3,Yes,421,7,5.8,Medium,8,6
+Sitabuldi,School Washroom,6.8,1.8,49.3,Yes,563,4,8.1,Medium,6,4
+Mihan,Transit Washroom,4.9,6.6,39.7,Yes,669,4,5.1,Medium,8,5
+Manish Nagar,Hospital Washroom,5.6,6.3,38.4,Yes,20,4,7.2,Medium,6,1
+Dharampeth,School Washroom,8.8,2.9,32.1,Yes,581,3,6.6,Low,7,1
+Dharampeth,Hospital Washroom,3.8,6.5,78.7,Yes,342,6,7.8,High,2,4
+Mihan,Transit Washroom,7.3,4.2,32.5,Yes,415,2,4.1,Low,1,6
+Wardha Road,School Washroom,6.2,5.9,47.9,Yes,386,5,5.0,Medium,4,3
+Kamptee Road,Office Washroom,3.2,7.8,62.9,Yes,687,5,4.3,High,2,6
+Civil Lines,Public Washroom,6.5,4.4,47.7,No,301,8,10.2,High,2,1
+Manish Nagar,School Washroom,5.1,5.3,40.3,Yes,320,7,3.2,Medium,9,2
+Nagpur Central,Mall Washroom,8.0,2.4,19.6,Yes,427,4,8.4,Low,4,4
+Civil Lines,Mall Washroom,5.3,3.2,45.7,No,359,4,10.2,High,8,1
+Hingna,School Washroom,7.3,2.6,24.1,Yes,505,4,8.7,Low,6,2
+Hingna,Office Washroom,4.9,8.3,66.6,Yes,488,6,13.0,High,5,4
+Hingna,Mall Washroom,5.2,6.4,61.2,Yes,544,4,6.2,Medium,8,2
+Mihan,Public Washroom,7.5,3.0,34.0,Yes,482,1,2.4,Low,1,3
+Dharampeth,School Washroom,5.5,8.1,62.7,Yes,406,6,23.3,High,7,0
+Mihan,Public Washroom,9.3,1.0,22.6,Yes,512,0,20.3,Low,5,5
+Hingna,Office Washroom,5.9,5.1,56.0,Yes,290,6,3.7,Medium,5,4
+Wardha Road,Transit Washroom,7.1,4.5,52.9,Yes,385,2,6.7,Medium,2,4
+Manish Nagar,Public Washroom,6.5,2.8,53.3,No,805,5,3.4,Medium,7,2
+Kamptee Road,School Washroom,3.9,4.9,89.3,Yes,508,9,0.5,High,5,6
+Hingna,Public Washroom,5.0,4.8,89.9,Yes,472,5,15.1,High,8,5
+Mihan,Mall Washroom,8.0,2.3,40.7,Yes,406,3,13.0,Low,3,1
+Mihan,Mall Washroom,7.7,2.3,56.1,Yes,473,2,0.6,Low,9,2
+Hingna,Transit Washroom,3.3,9.0,66.5,Yes,20,6,13.0,High,6,1
+Mihan,Mall Washroom,4.3,6.5,45.8,Yes,304,3,7.7,Medium,4,6
+Civil Lines,Mall Washroom,7.7,4.3,24.3,Yes,292,0,1.3,Low,3,6
+Manish Nagar,Office Washroom,5.9,2.5,66.6,Yes,512,4,1.4,Medium,6,2
+Dharampeth,School Washroom,8.0,3.6,19.3,Yes,562,3,6.3,Low,4,1
+Wardha Road,Office Washroom,6.5,5.1,64.1,Yes,240,5,2.3,Medium,2,6
+Sadar,Hospital Washroom,7.3,3.5,33.4,No,199,5,4.5,Medium,4,2
+Sadar,School Washroom,5.6,5.0,67.5,Yes,614,4,36.0,High,5,0
+Dharampeth,Public Washroom,7.8,5.3,69.4,Yes,538,4,4.5,Medium,8,6
+Civil Lines,Hospital Washroom,8.9,1.0,27.4,No,308,5,3.6,Low,8,2
+Nagpur Central,Hospital Washroom,8.6,3.1,55.3,Yes,593,1,3.3,Low,1,5
+Civil Lines,Office Washroom,4.6,5.1,60.2,No,374,8,16.7,High,1,3
+Wardha Road,Public Washroom,6.3,6.2,71.3,Yes,238,4,2.9,Medium,3,6
+Civil Lines,Hospital Washroom,6.2,6.3,44.0,No,389,9,4.2,High,5,4
+Nagpur Central,Office Washroom,4.4,6.5,74.0,Yes,739,4,22.5,High,8,4
+Nagpur Central,School Washroom,4.9,6.7,66.0,Yes,407,8,4.3,High,9,4
+Sitabuldi,Office Washroom,4.5,8.1,45.3,Yes,453,6,15.1,High,5,1
+Kamptee Road,Transit Washroom,7.0,4.0,13.0,Yes,351,2,36.0,Medium,1,5
+Hingna,Hospital Washroom,8.2,5.5,28.6,Yes,688,2,3.0,Low,3,2
+Mihan,Mall Washroom,10.0,1.0,0.0,Yes,481,1,13.3,Low,9,3
+Sadar,Public Washroom,8.9,1.6,58.9,Yes,451,1,22.6,Low,3,6
+Hingna,Hospital Washroom,9.1,2.2,9.3,Yes,419,0,6.9,Low,2,1
+Dharampeth,Hospital Washroom,8.6,5.4,28.6,Yes,358,3,1.3,Low,3,4
+Wardha Road,Transit Washroom,4.9,4.7,58.8,Yes,306,7,1.1,Medium,2,3
+Hingna,Mall Washroom,7.0,5.3,30.6,Yes,542,3,0.7,Low,4,0
+Mihan,Transit Washroom,7.3,3.4,38.1,Yes,277,3,8.7,Low,3,5
+Sadar,Transit Washroom,4.8,5.0,55.0,No,658,9,4.9,High,6,2
+Dharampeth,School Washroom,7.2,2.3,45.2,Yes,659,3,5.4,Low,7,4
+Sitabuldi,School Washroom,5.1,4.5,55.9,Yes,598,7,5.3,Medium,4,3
+Civil Lines,Hospital Washroom,8.2,4.1,32.3,Yes,291,5,10.6,Low,8,2
+Kamptee Road,Public Washroom,4.1,9.3,68.6,Yes,289,7,30.2,High,8,1
+Manish Nagar,Transit Washroom,9.2,2.4,19.5,Yes,95,1,15.2,Low,9,0
+Dharampeth,Public Washroom,7.4,1.9,22.3,Yes,20,3,12.2,Low,4,2
+Dharampeth,Hospital Washroom,6.9,3.8,31.4,Yes,307,3,2.1,Low,4,2
+Mihan,Transit Washroom,6.5,3.8,37.4,No,481,5,10.1,Medium,1,6
+Hingna,School Washroom,7.1,4.0,49.8,Yes,275,4,0.8,Low,8,0
+Sadar,Mall Washroom,6.2,3.1,35.3,Yes,368,2,5.0,Low,9,0
+Dharampeth,School Washroom,5.0,6.2,58.0,Yes,265,5,7.8,Medium,8,0
+Civil Lines,Mall Washroom,4.4,5.3,48.2,Yes,505,4,9.7,Medium,4,3
+Hingna,Mall Washroom,6.8,3.3,56.9,Yes,365,3,2.6,Medium,7,6
+Sitabuldi,Office Washroom,5.4,4.6,16.7,Yes,531,4,1.7,Medium,9,5
+Kamptee Road,Public Washroom,5.6,6.0,69.7,Yes,20,7,2.7,Medium,4,5
+Hingna,Public Washroom,8.2,2.8,26.8,Yes,759,0,14.7,Low,6,0
+Kamptee Road,Hospital Washroom,6.3,4.2,40.5,Yes,420,5,3.3,Medium,1,5
+Dharampeth,Transit Washroom,9.4,1.0,30.8,Yes,216,4,0.5,Low,2,3
+Sadar,Hospital Washroom,5.3,3.7,36.7,Yes,188,3,1.4,Medium,3,0
+Dharampeth,Office Washroom,7.3,4.6,20.8,Yes,523,2,0.8,Low,3,3
+Sitabuldi,Public Washroom,5.0,4.7,62.4,Yes,441,8,3.1,High,9,2
+Hingna,School Washroom,6.1,6.9,30.1,Yes,587,2,10.5,Medium,3,3
+Sitabuldi,Public Washroom,5.8,7.6,35.1,No,98,7,21.6,High,8,5
+Sitabuldi,Transit Washroom,5.9,3.6,60.4,Yes,514,3,11.1,Medium,1,0
+Kamptee Road,Hospital Washroom,7.2,5.5,44.2,Yes,287,2,2.6,Low,7,5
+Kamptee Road,Transit Washroom,6.1,3.8,32.5,No,772,8,7.1,High,4,3
+Manish Nagar,Public Washroom,7.9,3.6,11.1,Yes,722,1,3.9,Low,4,6
+Kamptee Road,Hospital Washroom,8.1,3.2,25.5,Yes,73,2,36.0,Medium,6,1
+Hingna,Transit Washroom,7.2,3.8,28.9,Yes,515,1,2.1,Low,6,4
+Civil Lines,Mall Washroom,6.9,4.4,26.2,Yes,651,3,0.5,Low,6,1
+Wardha Road,Hospital Washroom,5.6,6.6,52.0,Yes,422,3,9.4,Medium,4,3
+Wardha Road,School Washroom,5.7,7.5,46.1,Yes,109,5,5.5,Medium,4,3
+Sadar,School Washroom,8.1,4.6,41.9,Yes,498,4,16.5,Medium,9,1
+Mihan,Mall Washroom,8.9,3.0,7.2,Yes,591,0,15.4,Low,8,4
+Sadar,School Washroom,5.0,8.4,52.6,Yes,671,8,1.0,High,3,0
+Nagpur Central,Transit Washroom,3.3,8.1,84.9,No,357,10,6.9,High,5,4
+Civil Lines,School Washroom,6.9,4.8,51.0,No,346,9,11.7,High,3,5
+Hingna,School Washroom,10.0,1.8,19.5,Yes,331,2,5.0,Low,1,4
+Sitabuldi,Transit Washroom,7.6,1.9,25.6,No,478,4,9.5,Medium,3,0
+Sadar,School Washroom,4.3,5.0,59.3,Yes,321,4,0.7,Medium,7,5
+Nagpur Central,Transit Washroom,4.5,6.3,65.1,Yes,263,6,0.7,Medium,3,3
+Civil Lines,Transit Washroom,4.2,5.2,56.9,Yes,725,8,0.7,High,1,2
+Manish Nagar,Office Washroom,5.7,5.8,65.5,No,805,11,1.5,High,1,5
+Wardha Road,School Washroom,6.5,6.5,55.0,Yes,275,4,7.0,Medium,1,0
+Manish Nagar,Office Washroom,6.7,4.4,44.5,Yes,359,4,29.3,Medium,3,5
+Manish Nagar,School Washroom,7.7,5.3,52.2,Yes,877,5,0.5,Medium,1,4
+Sadar,Office Washroom,6.1,5.5,51.6,No,403,11,17.2,High,1,1
+Dharampeth,School Washroom,6.4,2.9,21.0,Yes,446,5,0.9,Low,7,1
+Sadar,Transit Washroom,7.2,5.6,40.8,No,707,7,6.6,High,2,5
+Sadar,Transit Washroom,5.8,4.7,36.0,Yes,330,4,5.2,Medium,3,5
+Sitabuldi,Public Washroom,5.4,8.8,42.9,Yes,818,7,24.4,High,5,4
+Nagpur Central,Office Washroom,10.0,2.1,10.4,Yes,595,2,36.0,Low,5,0
+Hingna,Office Washroom,5.3,5.6,36.3,Yes,340,5,1.1,Medium,5,6
+Wardha Road,Hospital Washroom,2.7,6.2,68.9,Yes,732,8,2.3,High,5,2
+Nagpur Central,Public Washroom,4.3,7.5,97.6,Yes,531,7,19.2,High,9,1
+Kamptee Road,Public Washroom,5.5,4.3,69.8,Yes,220,5,5.8,Medium,2,0
+Hingna,Office Washroom,3.7,9.2,52.6,Yes,850,10,3.5,High,7,4
+Wardha Road,Office Washroom,8.2,1.0,35.4,Yes,418,5,1.6,Low,5,6
+Nagpur Central,Hospital Washroom,6.6,5.9,52.9,Yes,397,3,5.1,Medium,7,6
+Mihan,Office Washroom,3.4,7.7,70.1,No,413,11,7.6,High,9,0
+Dharampeth,Office Washroom,7.4,1.8,28.8,Yes,312,1,0.5,Low,3,5
+Kamptee Road,School Washroom,6.3,6.4,47.7,Yes,695,3,1.6,Medium,5,6
+Manish Nagar,Public Washroom,1.1,10.0,92.3,Yes,176,7,2.9,High,7,1
+Wardha Road,Public Washroom,5.5,4.2,37.3,No,713,8,1.9,High,8,1
+Dharampeth,Office Washroom,8.4,1.7,34.3,No,667,1,1.9,Low,8,2
+Manish Nagar,Office Washroom,7.0,5.1,57.1,Yes,548,7,4.2,Medium,6,6
+Civil Lines,Transit Washroom,6.9,4.8,46.4,Yes,616,5,11.9,Medium,2,5
+Sitabuldi,Public Washroom,5.6,5.6,44.8,No,467,6,18.6,High,2,1
+Manish Nagar,School Washroom,9.2,3.0,11.8,Yes,373,1,8.5,Low,1,1
+Civil Lines,Transit Washroom,4.3,7.7,39.6,Yes,663,5,7.3,High,8,5
+Dharampeth,Public Washroom,6.4,5.5,51.1,Yes,691,5,6.6,Medium,2,2
+Sitabuldi,Office Washroom,5.8,4.9,52.1,Yes,290,4,7.6,Medium,8,6
+Manish Nagar,Transit Washroom,8.4,2.9,29.6,Yes,202,1,7.9,Low,7,4
+Nagpur Central,Office Washroom,8.9,1.0,29.1,Yes,581,4,3.5,Low,3,0
+Dharampeth,Hospital Washroom,6.5,2.0,42.3,Yes,301,4,1.7,Low,4,1
+Hingna,Hospital Washroom,7.2,5.2,31.6,Yes,199,2,14.3,Medium,6,2
+Sadar,School Washroom,5.7,6.0,63.8,Yes,579,6,0.5,Medium,4,5
+Wardha Road,Public Washroom,5.4,4.9,50.1,Yes,20,5,10.1,Medium,1,6
+Nagpur Central,Public Washroom,7.6,3.7,35.1,Yes,393,4,6.6,Low,7,5
+Manish Nagar,Public Washroom,6.9,5.1,42.0,Yes,598,4,14.1,Medium,4,2
+Mihan,Office Washroom,7.7,5.2,35.5,Yes,454,3,20.6,Medium,6,5
+Sitabuldi,Office Washroom,5.1,6.8,64.2,Yes,666,4,7.3,High,3,0
+Nagpur Central,Transit Washroom,7.6,3.6,24.8,Yes,220,4,28.3,Medium,5,2
+Sadar,Mall Washroom,3.2,6.5,71.0,Yes,549,7,7.4,High,9,1
+Mihan,Transit Washroom,7.4,4.9,43.1,Yes,670,5,10.4,Medium,7,5
+Sadar,Office Washroom,4.8,6.5,43.7,Yes,671,6,5.1,High,1,0
+Wardha Road,Hospital Washroom,8.3,3.8,17.9,Yes,475,4,3.6,Low,3,6
+Mihan,School Washroom,5.4,5.4,66.5,Yes,550,4,6.6,Medium,8,4
+Dharampeth,Hospital Washroom,7.0,2.9,44.5,Yes,422,4,4.4,Low,5,5
+Nagpur Central,Transit Washroom,7.7,2.7,15.1,Yes,426,2,2.4,Low,7,5
+Sadar,Mall Washroom,7.3,4.0,45.1,Yes,298,6,8.6,Medium,5,3
+Hingna,School Washroom,5.6,5.0,65.2,Yes,154,5,2.3,Medium,6,5
+Sadar,Office Washroom,4.9,7.1,36.7,Yes,54,1,22.7,Medium,7,3
+Wardha Road,Office Washroom,6.2,3.9,48.1,Yes,721,5,4.7,Medium,2,4
+Civil Lines,Office Washroom,4.8,3.4,73.3,Yes,30,6,0.5,Medium,3,4
+Wardha Road,Transit Washroom,5.3,7.7,33.8,Yes,430,3,1.9,Medium,6,2
+Hingna,Office Washroom,7.8,5.5,35.4,No,739,10,3.0,High,7,0
+Dharampeth,Mall Washroom,7.1,3.8,26.1,Yes,593,3,24.5,Medium,3,6
+Manish Nagar,Office Washroom,5.2,5.5,54.0,Yes,288,5,0.5,Medium,7,4
+Dharampeth,Office Washroom,6.7,6.2,46.1,Yes,462,5,1.4,Medium,3,6
+Manish Nagar,School Washroom,4.9,4.7,54.3,Yes,853,5,1.0,Medium,4,3
+Nagpur Central,Office Washroom,7.6,1.7,43.5,Yes,671,3,1.7,Low,4,1
+Mihan,School Washroom,4.3,4.4,72.0,Yes,433,7,6.3,High,9,2
+Hingna,Office Washroom,3.6,6.4,62.8,Yes,871,7,9.0,High,3,1
+Hingna,Mall Washroom,4.8,7.0,76.3,Yes,188,7,9.0,High,2,2
+Mihan,School Washroom,7.7,3.0,40.4,Yes,302,5,2.6,Low,4,2
+Hingna,School Washroom,4.9,7.7,57.1,No,521,9,10.9,High,6,1
+Sadar,School Washroom,7.1,4.7,41.2,Yes,444,2,8.4,Medium,7,4
+Dharampeth,Public Washroom,6.8,5.2,43.3,Yes,644,6,4.7,Medium,8,1
+Sitabuldi,Hospital Washroom,5.0,5.7,64.3,Yes,392,6,13.8,High,2,5
+Wardha Road,Office Washroom,6.7,5.8,57.9,Yes,414,4,2.4,Medium,8,4
+Hingna,Mall Washroom,6.5,4.8,39.1,Yes,293,5,13.6,Medium,2,6
+Sadar,Office Washroom,3.9,6.9,71.2,Yes,482,4,19.8,High,7,5
+Sitabuldi,Public Washroom,8.1,3.6,41.8,Yes,416,3,8.3,Low,3,4
+Hingna,Public Washroom,10.0,1.0,15.4,Yes,298,0,1.7,Low,7,2
+Civil Lines,Hospital Washroom,6.5,5.1,42.4,Yes,464,4,0.5,Medium,5,5
+Manish Nagar,Public Washroom,7.7,5.9,40.6,Yes,458,2,34.9,Medium,3,6
+Mihan,Public Washroom,2.1,6.7,76.1,No,117,9,8.9,High,6,4
+Sadar,Public Washroom,8.7,1.4,40.2,Yes,197,3,2.0,Low,1,2
+Sadar,Office Washroom,3.4,5.8,63.1,Yes,765,8,7.3,High,6,0
+Sitabuldi,Hospital Washroom,7.1,2.6,52.2,Yes,328,0,4.4,Low,6,3
+Wardha Road,Office Washroom,5.0,8.1,81.0,Yes,525,7,12.6,High,6,4
+Civil Lines,School Washroom,5.0,6.1,61.5,No,824,9,8.9,High,4,4
+Sitabuldi,Public Washroom,5.2,5.7,51.7,Yes,371,10,23.0,High,4,2
+Manish Nagar,Office Washroom,8.3,3.5,43.0,Yes,504,5,4.2,Low,8,4
+Dharampeth,Hospital Washroom,6.1,3.9,51.8,Yes,579,4,4.5,Medium,9,4
+Nagpur Central,School Washroom,5.3,5.1,59.4,Yes,71,5,10.7,Medium,9,4
+Mihan,Hospital Washroom,5.7,5.5,60.5,Yes,326,6,6.0,Medium,6,5
+Nagpur Central,Public Washroom,8.1,1.6,42.6,Yes,591,4,1.3,Low,4,2
+Civil Lines,Public Washroom,8.4,1.0,16.4,Yes,589,2,3.8,Low,6,6
+Manish Nagar,Mall Washroom,4.5,6.2,63.6,No,217,10,1.6,High,8,2
+Nagpur Central,Hospital Washroom,4.7,8.0,50.8,Yes,271,5,3.7,High,9,2
+Manish Nagar,Office Washroom,7.1,2.6,22.7,Yes,325,2,4.6,Low,3,1
+Kamptee Road,Office Washroom,2.7,6.4,78.9,Yes,400,9,7.8,High,2,2
+Civil Lines,Hospital Washroom,5.4,6.2,47.5,Yes,337,3,5.7,Medium,7,2
+Sadar,Mall Washroom,6.1,2.7,72.2,Yes,226,5,6.4,Medium,5,0
+Kamptee Road,School Washroom,3.1,7.0,81.3,No,435,10,0.5,High,8,6
+Civil Lines,Office Washroom,4.7,4.6,66.2,Yes,617,7,1.7,High,8,2
+Mihan,Mall Washroom,10.0,1.2,16.5,Yes,439,0,17.4,Low,7,2
+Mihan,School Washroom,7.2,3.5,33.5,Yes,362,3,1.0,Low,5,4
+Dharampeth,Office Washroom,6.6,4.1,36.9,Yes,430,4,6.6,Medium,1,3
+Wardha Road,Hospital Washroom,6.2,4.8,13.3,Yes,39,2,20.2,Medium,8,5
+Wardha Road,Hospital Washroom,6.7,3.8,30.0,Yes,443,5,3.8,Medium,1,4
+Sadar,Hospital Washroom,6.5,4.4,53.3,Yes,267,5,19.4,Medium,5,6
+Nagpur Central,Mall Washroom,6.6,2.5,48.9,Yes,108,3,0.5,Low,6,6
+Wardha Road,School Washroom,6.0,5.3,52.4,Yes,247,3,7.0,Medium,2,2
+Manish Nagar,Transit Washroom,7.9,6.0,18.4,Yes,244,1,0.8,Low,7,4
+Kamptee Road,School Washroom,6.8,4.9,22.7,Yes,393,5,5.3,Medium,6,3
+Dharampeth,School Washroom,8.8,2.9,36.0,Yes,344,1,1.8,Low,2,6
+Sitabuldi,Transit Washroom,6.9,4.1,51.1,Yes,345,3,2.5,Medium,3,3
+Wardha Road,School Washroom,3.6,6.4,57.5,Yes,352,7,6.4,High,2,1
+Dharampeth,Hospital Washroom,9.0,1.0,17.8,Yes,113,0,25.4,Low,5,2
+Sitabuldi,Hospital Washroom,6.9,4.6,43.1,Yes,765,3,0.9,Medium,7,2
+Sitabuldi,Transit Washroom,8.8,1.7,27.8,Yes,430,3,14.1,Low,7,0
+Sadar,School Washroom,6.2,3.9,30.2,Yes,859,5,2.8,Medium,6,0
+Dharampeth,Hospital Washroom,5.9,4.4,44.1,Yes,786,6,13.2,Medium,9,1
+Nagpur Central,Hospital Washroom,6.8,6.2,40.4,Yes,552,3,9.1,Medium,7,6
+Hingna,Hospital Washroom,8.1,4.6,48.0,Yes,20,5,10.0,Medium,9,0
+Wardha Road,School Washroom,4.9,8.0,55.9,Yes,706,6,3.1,High,8,0
+Manish Nagar,School Washroom,4.6,7.4,56.1,Yes,762,6,14.5,High,1,2
+Nagpur Central,Hospital Washroom,7.0,3.0,23.8,Yes,20,3,1.8,Low,4,5
+Dharampeth,Hospital Washroom,6.0,3.3,29.8,Yes,20,1,22.5,Medium,1,3
+Hingna,Office Washroom,8.0,3.8,28.6,Yes,746,3,6.7,Low,3,2
+Mihan,Mall Washroom,7.8,3.4,10.5,No,453,4,7.9,Medium,2,6
+Nagpur Central,Transit Washroom,8.5,1.1,38.9,Yes,539,2,1.0,Low,4,6
+Manish Nagar,Transit Washroom,4.2,6.0,60.8,Yes,789,4,1.5,High,8,1
+Hingna,Transit Washroom,6.7,5.1,50.5,Yes,607,3,3.9,Medium,1,6
+Dharampeth,Office Washroom,7.8,1.1,26.8,Yes,414,3,5.8,Low,4,4
+Sitabuldi,Public Washroom,3.9,8.4,50.4,Yes,249,7,0.5,High,4,3
+Sadar,Hospital Washroom,3.0,7.0,100.0,Yes,564,6,3.4,High,1,3
+Wardha Road,Transit Washroom,5.9,8.1,58.6,No,356,10,1.1,High,9,2
+Manish Nagar,Office Washroom,10.0,1.0,0.0,Yes,267,1,8.1,Low,3,5
+Kamptee Road,Hospital Washroom,6.5,6.2,38.5,Yes,356,5,7.3,Medium,2,6
+Dharampeth,Mall Washroom,6.2,6.7,54.2,No,637,9,8.5,High,4,2
+Hingna,Office Washroom,6.0,4.5,2.4,Yes,504,5,8.0,Medium,3,2
+Dharampeth,Hospital Washroom,5.0,8.1,30.8,Yes,821,4,2.4,Medium,7,1
+Dharampeth,School Washroom,5.8,4.4,39.5,Yes,365,7,1.9,Medium,1,1
+Dharampeth,Transit Washroom,7.7,3.2,56.0,Yes,315,5,5.6,Medium,9,1
+Hingna,Office Washroom,4.6,5.4,75.4,Yes,416,7,0.5,High,6,4
+Kamptee Road,Mall Washroom,4.6,8.2,77.5,Yes,375,6,14.2,High,1,0
+Sadar,Mall Washroom,6.5,4.9,49.5,Yes,423,4,9.7,Medium,7,3
+Manish Nagar,Mall Washroom,4.1,5.6,81.8,Yes,1018,7,5.2,High,4,1
+Dharampeth,Office Washroom,8.4,4.6,0.0,Yes,393,3,0.6,Low,5,6
+Mihan,School Washroom,5.7,5.1,43.5,Yes,923,8,0.5,Medium,3,2
+Hingna,Mall Washroom,5.5,1.0,47.9,No,357,5,7.2,Medium,1,6
+Civil Lines,School Washroom,4.7,6.0,80.3,No,418,11,36.0,High,1,3
+Kamptee Road,Hospital Washroom,5.4,7.5,48.8,No,274,8,0.6,High,3,1
+Manish Nagar,Hospital Washroom,8.3,2.3,17.5,Yes,576,2,18.4,Low,3,0
+Mihan,Transit Washroom,8.8,1.2,24.0,Yes,280,0,19.2,Low,1,0
+Wardha Road,Public Washroom,6.8,3.8,56.3,Yes,439,3,0.9,Medium,7,5
+Nagpur Central,Office Washroom,8.9,3.3,31.6,Yes,303,2,1.0,Low,9,0
+Mihan,Office Washroom,6.6,3.4,29.3,Yes,469,2,16.7,Medium,8,3
+Nagpur Central,Office Washroom,6.1,6.3,65.0,Yes,687,4,0.9,Medium,5,1
+Mihan,Transit Washroom,3.9,8.4,73.6,Yes,354,6,4.9,High,8,1
+Sitabuldi,Public Washroom,5.1,3.9,56.7,Yes,432,2,3.8,Medium,7,6
+Civil Lines,Mall Washroom,9.7,1.0,23.7,Yes,573,4,8.7,Low,8,5
+Sadar,Hospital Washroom,7.5,5.0,35.3,Yes,632,5,7.2,Medium,4,0
+Civil Lines,Office Washroom,6.8,1.6,51.3,Yes,424,3,1.7,Low,9,1
+Sadar,Office Washroom,6.4,8.9,99.6,Yes,496,9,3.8,High,5,3
+Hingna,School Washroom,4.0,7.8,69.8,Yes,468,6,2.7,High,6,0
+Sadar,Hospital Washroom,5.4,6.9,59.0,Yes,591,7,21.5,High,8,0
+Sitabuldi,Hospital Washroom,7.4,3.1,56.0,Yes,431,3,2.5,Low,8,6
+Wardha Road,Hospital Washroom,8.9,3.3,17.7,Yes,459,2,6.0,Low,3,6
+Sitabuldi,Mall Washroom,6.3,3.5,48.4,Yes,164,4,7.9,Medium,2,1
+Dharampeth,Public Washroom,8.2,2.8,21.1,Yes,703,2,1.6,Low,8,0
+Kamptee Road,Mall Washroom,8.9,1.5,16.9,Yes,666,2,5.7,Low,8,0
+Dharampeth,School Washroom,7.2,3.8,65.9,Yes,928,3,16.9,Medium,8,1
+Civil Lines,Public Washroom,8.2,3.4,43.3,Yes,321,2,6.9,Low,1,5
+Sitabuldi,School Washroom,5.5,6.1,31.8,Yes,162,6,15.3,Medium,2,6
+Kamptee Road,School Washroom,6.4,3.3,47.0,Yes,211,4,1.5,Low,1,0
+Sitabuldi,Office Washroom,7.5,1.4,34.0,Yes,540,2,2.3,Low,3,0
+Sadar,Transit Washroom,7.7,3.6,40.4,No,460,6,19.7,High,5,4
+Sitabuldi,School Washroom,9.7,2.7,28.2,Yes,621,2,22.0,Low,5,5
+Nagpur Central,Transit Washroom,7.7,2.7,52.2,Yes,401,3,3.3,Low,5,1
+Civil Lines,Transit Washroom,4.9,4.7,34.4,No,124,6,8.7,High,5,1
+Wardha Road,Office Washroom,7.0,5.4,34.7,Yes,562,3,14.7,Medium,8,1
+Sitabuldi,Mall Washroom,7.7,3.8,29.1,Yes,603,6,1.6,Low,9,2
+Hingna,Public Washroom,6.1,6.0,66.5,Yes,162,6,1.6,Medium,8,4
+Nagpur Central,Mall Washroom,8.0,2.9,22.5,Yes,530,3,3.6,Low,2,3
+Kamptee Road,Mall Washroom,7.3,3.4,37.7,No,257,6,6.9,Medium,2,1
+Manish Nagar,Hospital Washroom,6.1,6.0,22.2,Yes,668,6,16.7,Medium,3,2
+Kamptee Road,School Washroom,5.0,6.1,46.4,Yes,383,7,0.5,Medium,2,6
+Hingna,Mall Washroom,7.1,5.7,62.1,Yes,318,5,8.0,Medium,4,6
+Dharampeth,Hospital Washroom,9.0,1.0,27.5,Yes,517,3,0.8,Low,6,5
+Hingna,Office Washroom,5.9,7.7,34.3,No,320,7,5.7,High,4,4
+Dharampeth,Public Washroom,8.7,1.1,15.5,Yes,302,0,2.4,Low,5,5
+Dharampeth,Public Washroom,6.4,6.9,14.9,Yes,505,5,4.4,Medium,9,2
+Mihan,Mall Washroom,2.2,7.3,81.1,No,524,10,1.5,High,8,3
+Hingna,Transit Washroom,7.5,5.2,31.3,Yes,771,7,19.1,Medium,7,3
+Dharampeth,Office Washroom,4.1,6.9,39.7,Yes,347,4,6.5,Medium,4,3
+Nagpur Central,Hospital Washroom,7.6,2.8,40.8,Yes,268,4,1.1,Low,2,3
+Sadar,Office Washroom,4.0,8.9,67.4,Yes,311,3,13.5,High,8,1
+Hingna,Hospital Washroom,5.0,6.2,52.8,Yes,763,5,3.6,Medium,1,2
+Dharampeth,Public Washroom,7.2,4.0,23.3,Yes,307,3,1.3,Low,5,2
+Mihan,School Washroom,7.2,1.6,26.4,Yes,579,5,10.3,Low,6,2
+Kamptee Road,Office Washroom,6.0,3.6,46.6,Yes,401,3,0.5,Medium,3,0
+Manish Nagar,Mall Washroom,4.4,9.1,64.2,Yes,628,6,13.3,High,9,0
+Sadar,School Washroom,7.0,7.0,38.2,Yes,525,4,22.6,Medium,1,3
+Hingna,School Washroom,4.5,7.4,82.7,Yes,650,5,4.7,High,6,2
+Sadar,Hospital Washroom,8.1,4.9,23.5,Yes,314,0,0.6,Low,1,3
+Nagpur Central,Office Washroom,4.2,7.1,69.9,Yes,911,7,1.6,High,4,1
+Wardha Road,Hospital Washroom,5.8,8.7,33.2,Yes,317,4,0.5,Medium,1,0
+Wardha Road,School Washroom,10.0,2.5,7.8,Yes,270,2,1.0,Low,2,3
+Manish Nagar,Office Washroom,8.2,1.9,4.0,Yes,424,0,11.9,Low,1,1
+Sitabuldi,Transit Washroom,7.0,4.8,51.7,No,721,9,16.2,High,3,5
+Nagpur Central,Mall Washroom,3.3,7.5,53.5,Yes,20,5,11.5,High,8,6
+Dharampeth,Public Washroom,7.9,3.3,17.2,Yes,363,2,1.2,Low,9,5
+Sitabuldi,Public Washroom,8.8,4.3,0.0,Yes,260,3,0.7,Low,6,0
+Manish Nagar,School Washroom,7.3,3.5,49.4,Yes,592,6,2.2,Medium,8,0
+Mihan,Hospital Washroom,5.8,4.6,62.7,Yes,630,3,14.7,Medium,3,6
+Civil Lines,Mall Washroom,8.6,1.0,23.1,Yes,626,3,4.5,Low,1,3
+Sadar,School Washroom,9.5,2.3,10.9,Yes,161,0,0.8,Low,2,5
+Dharampeth,Office Washroom,8.1,4.3,14.3,Yes,163,2,12.8,Low,2,2
+Sadar,Mall Washroom,5.9,2.2,70.1,Yes,253,2,3.0,Medium,9,6
+Wardha Road,Transit Washroom,10.0,1.0,5.1,Yes,20,0,1.2,Low,4,0
+Hingna,Hospital Washroom,8.9,2.4,0.0,Yes,782,1,4.2,Low,1,0
+Hingna,Transit Washroom,6.5,4.5,52.2,Yes,416,5,15.5,Medium,8,3
+Wardha Road,School Washroom,7.3,6.4,38.2,No,496,8,4.2,High,4,6
+Nagpur Central,Transit Washroom,6.0,3.4,50.0,Yes,660,4,18.3,Medium,7,6
+Nagpur Central,Office Washroom,6.9,2.4,58.3,Yes,583,7,2.9,Medium,6,4
+Kamptee Road,Mall Washroom,6.0,7.4,28.2,Yes,272,7,8.4,Medium,5,4
+Hingna,Mall Washroom,8.5,2.5,29.1,Yes,330,3,26.2,Low,4,1
+Wardha Road,Hospital Washroom,7.2,3.0,34.8,Yes,116,6,26.7,Medium,1,3
+Kamptee Road,School Washroom,10.0,1.3,0.0,Yes,424,0,7.9,Low,6,1
+Kamptee Road,School Washroom,6.9,1.9,36.4,Yes,534,5,1.5,Low,3,2
+Dharampeth,Public Washroom,3.7,9.0,63.0,Yes,211,9,7.3,High,2,5
+Mihan,Transit Washroom,4.7,5.2,44.1,Yes,62,5,19.7,Medium,2,5
+Dharampeth,Hospital Washroom,6.0,4.8,44.4,Yes,652,4,4.5,Medium,8,5
+Wardha Road,Office Washroom,7.3,6.5,30.0,Yes,576,2,10.1,Medium,1,6
+Nagpur Central,Public Washroom,4.9,6.1,51.4,No,271,8,18.0,High,8,5
+Civil Lines,School Washroom,6.2,7.1,50.3,Yes,70,4,2.9,Medium,3,6
+Sitabuldi,School Washroom,6.7,7.8,48.8,Yes,726,5,12.1,High,7,6
+Manish Nagar,Transit Washroom,5.9,6.4,39.3,Yes,750,7,5.3,Medium,7,0
+Civil Lines,School Washroom,7.3,4.7,39.0,Yes,457,5,11.0,Medium,2,1
+Manish Nagar,Office Washroom,8.6,4.5,28.2,No,176,3,1.5,Medium,4,4
+Civil Lines,Public Washroom,5.0,5.8,61.6,Yes,50,4,8.1,Medium,1,0
+Mihan,Hospital Washroom,10.0,3.3,32.6,Yes,537,3,1.5,Low,2,0
+Hingna,Hospital Washroom,7.5,3.0,54.6,Yes,661,3,5.0,Medium,8,0
+Dharampeth,Hospital Washroom,5.5,4.5,41.1,Yes,286,7,8.1,Medium,1,5
+Kamptee Road,Public Washroom,8.6,2.3,11.3,Yes,248,2,10.2,Low,1,4
+Sadar,Public Washroom,5.8,3.0,47.1,Yes,118,6,0.5,Medium,3,3
+Hingna,Transit Washroom,5.8,2.1,48.0,No,680,6,3.2,Medium,9,4
+Dharampeth,Transit Washroom,5.9,7.9,38.4,Yes,566,8,9.5,High,7,1
+Wardha Road,Transit Washroom,7.1,2.2,42.9,Yes,558,1,4.3,Low,5,2
+Sitabuldi,Public Washroom,7.2,4.8,45.8,Yes,146,6,12.8,Medium,8,2
+Sitabuldi,Hospital Washroom,7.8,2.9,15.7,Yes,590,1,22.5,Low,2,5
+Dharampeth,Public Washroom,6.0,4.2,51.9,Yes,476,6,1.2,Medium,6,2
+Kamptee Road,Office Washroom,6.3,4.9,37.8,Yes,646,3,17.2,Medium,4,6
