@@ -1,4 +1,4 @@
-# PugArch Day 9 – Angular + TypeScript + API Integration
+#  Day 9 – Angular + TypeScript + API Integration
 
 ## Project Overview
 
