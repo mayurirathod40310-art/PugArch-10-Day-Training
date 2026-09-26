@@ -1,0 +1,34 @@
+<h2>Inspection History</h2>
+
+<p>View previous facility inspections and their results.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Inspection ID</th>
+      <th>Facility</th>
+      <th>Inspector</th>
+      <th>Date</th>
+      <th>Score</th>
+      <th>Status</th>
+      <th>Remarks</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let inspection of inspections">
+      <td>{{ inspection.id }}</td>
+      <td>{{ inspection.facilityName }}</td>
+      <td>{{ inspection.inspector }}</td>
+      <td>{{ inspection.date }}</td>
+      <td>{{ inspection.score }}%</td>
+      <td>{{ inspection.status }}</td>
+      <td>{{ inspection.remarks }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<a routerLink="/dashboard">← Back to Dashboard</a>
+

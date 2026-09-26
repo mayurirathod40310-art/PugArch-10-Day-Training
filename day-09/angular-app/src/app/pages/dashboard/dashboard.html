@@ -1,0 +1,87 @@
+<h2>Facility Inspection Dashboard</h2>
+<p>Monitor facility inspection performance</p>
+
+<div class="metrics">
+  <div class="card">
+    <h3>Total Facilities</h3>
+    <strong>{{ totalFacilities }}</strong>
+  </div>
+
+  <div class="card">
+    <h3>Good</h3>
+    <strong>{{ goodFacilities }}</strong>
+  </div>
+
+  <div class="card">
+    <h3>Needs Attention</h3>
+    <strong>{{ attentionFacilities }}</strong>
+  </div>
+
+  <div class="card">
+    <h3>Critical</h3>
+    <strong>{{ criticalFacilities }}</strong>
+  </div>
+
+  <div class="card">
+    <h3>Average Score</h3>
+    <strong>{{ averageScore }}%</strong>
+  </div>
+</div>
+
+<div class="controls">
+  <input
+    type="text"
+    placeholder="Search facilities..."
+    [(ngModel)]="searchTerm"
+  >
+
+  <select [(ngModel)]="statusFilter">
+    <option value="All">All Status</option>
+    <option value="Good">Good</option>
+    <option value="Needs Attention">Needs Attention</option>
+    <option value="Critical">Critical</option>
+  </select>
+
+  <select [(ngModel)]="sortBy">
+    <option value="name">Sort by Name</option>
+    <option value="score">Sort by Score</option>
+    <option value="location">Sort by Location</option>
+  </select>
+</div>
+
+<h3>Facilities</h3>
+
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Facility</th>
+      <th>Location</th>
+      <th>Type</th>
+      <th>Score</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let facility of filteredFacilities">
+      <td>{{ facility.id }}</td>
+
+      <td>
+        <a [routerLink]="['/facilities', facility.id]">
+          {{ facility.name }}
+        </a>
+      </td>
+
+      <td>{{ facility.location }}</td>
+      <td>{{ facility.type }}</td>
+      <td>{{ facility.score }}%</td>
+      <td>{{ facility.status }}</td>
+    </tr>
+  </tbody>
+</table>
+
+<br>
+
+<a routerLink="/inspection-history">View Inspection History →</a>
+

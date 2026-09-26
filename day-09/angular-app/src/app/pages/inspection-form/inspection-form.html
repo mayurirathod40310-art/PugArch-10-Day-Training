@@ -1,0 +1,75 @@
+
+<h2>New Facility Inspection</h2>
+
+<form (ngSubmit)="submitInspection()" #inspectionForm="ngForm">
+
+  <label>Facility ID</label>
+  <input
+    type="text"
+    name="facilityId"
+    [(ngModel)]="inspection.facilityId"
+    required
+  >
+
+  <label>Facility Name</label>
+  <input
+    type="text"
+    name="facilityName"
+    [(ngModel)]="inspection.facilityName"
+    required
+  >
+
+  <label>Inspector</label>
+  <input
+    type="text"
+    name="inspector"
+    [(ngModel)]="inspection.inspector"
+    required
+  >
+
+  <label>Date</label>
+  <input
+    type="date"
+    name="date"
+    [(ngModel)]="inspection.date"
+    required
+  >
+
+  <label>Score</label>
+  <input
+    type="number"
+    name="score"
+    [(ngModel)]="inspection.score"
+    min="0"
+    max="100"
+    required
+  >
+
+  <label>Status</label>
+  <select
+    name="status"
+    [(ngModel)]="inspection.status"
+  >
+    <option value="Pending">Pending</option>
+    <option value="Passed">Passed</option>
+    <option value="Failed">Failed</option>
+  </select>
+
+  <label>Remarks</label>
+  <textarea
+    name="remarks"
+    [(ngModel)]="inspection.remarks"
+    rows="4"
+  ></textarea>
+
+  <button type="submit" [disabled]="inspectionForm.invalid">
+    Submit Inspection
+  </button>
+
+</form>
+
+<div *ngIf="submitted">
+  <p>Inspection submitted successfully!</p>
+  <a routerLink="/dashboard">Back to Dashboard</a>
+</div>
+

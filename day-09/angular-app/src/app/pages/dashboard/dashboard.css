@@ -1,0 +1,131 @@
+:host {
+  display: block;
+  min-height: 100vh;
+  padding: 32px;
+  background: #f5f7fb;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+h2 {
+  margin: 0 0 6px;
+  color: #1f2937;
+  font-size: 28px;
+}
+
+p {
+  color: #6b7280;
+  margin-bottom: 24px;
+}
+
+.metrics {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 16px;
+  margin-bottom: 28px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+.card h3 {
+  margin: 0 0 10px;
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.card strong {
+  font-size: 28px;
+  color: #111827;
+}
+
+.controls {
+  display: flex;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.controls input,
+.controls select {
+  padding: 10px 12px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: white;
+  font-size: 14px;
+}
+
+.controls input {
+  width: 280px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+}
+
+th,
+td {
+  padding: 14px 16px;
+  text-align: left;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+  background: #f3f4f6;
+  color: #374151;
+  font-size: 14px;
+}
+
+td {
+  color: #4b5563;
+}
+
+td a {
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+td a:hover {
+  text-decoration: underline;
+}
+
+table tr:hover {
+  background: #f9fafb;
+}
+
+a[routerLink="/inspection-history"] {
+  display: inline-block;
+  margin-top: 20px;
+  color: #2563eb;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+a[routerLink="/inspection-history"]:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 900px) {
+  .metrics {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .controls {
+    flex-wrap: wrap;
+  }
+
+  table {
+    display: block;
+    overflow-x: auto;
+  }
+}
+
