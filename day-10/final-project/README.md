@@ -711,59 +711,26 @@ http://localhost:5173/
 
 ## 17. Screenshots
 
-Screenshots should be added to a `screenshots/` directory in the final submission.
+### 1. Application Dashboard
 
-Recommended screenshots:
+The main dashboard provides an overview of the Smart Hygiene Risk Prediction System and allows users to enter facility information for prediction.
 
-### Main Dashboard
+![Application Dashboard](screenshots/dashboard.png)
 
-```text
-screenshots/dashboard.png
-```
+### 2. Facility Details and Prediction
 
-Shows the main prediction form.
+The facility details section allows users to enter inspection-related information such as cleanliness score, odor score, waste level, water availability, footfall, complaints, and hours since cleaning.
 
-### High-Risk Prediction
+![Facility Details and Prediction](screenshots/facility-details.png)
 
-```text
-screenshots/high-risk-prediction.png
-```
+### 3. Prediction History
 
-Shows a prediction result and probability values.
+The prediction history section displays the predictions generated during the current browser session, including the predicted hygiene risk and prediction time.
 
-### Low-Risk Prediction
+![Prediction History](screenshots/prediction-history.png)
 
-```text
-screenshots/low-risk-prediction.png
-```
 
-Shows a different facility input and its prediction.
 
-### Prediction History
-
-```text
-screenshots/prediction-history.png
-```
-
-Shows multiple predictions stored during the current session.
-
-### FastAPI Documentation
-
-```text
-screenshots/api-docs.png
-```
-
-Shows the FastAPI Swagger documentation.
-
-### Feature Importance
-
-```text
-screenshots/feature-importance.png
-```
-
-Shows the generated ML feature importance visualization.
-
----
 
 ## 18. Challenges Faced
 

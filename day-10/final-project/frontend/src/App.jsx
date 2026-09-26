@@ -15,20 +15,31 @@ const initialForm = {
   inspection_day_of_week: 5,
 };
 
+const numericFields = [
+  "cleanliness_score",
+  "odor_score",
+  "waste_level",
+  "footfall",
+  "complaints",
+  "hours_since_cleaning",
+  "inspection_month",
+  "inspection_day_of_week",
+];
+
 function App() {
   const [formData, setFormData] = useState(initialForm);
   const [result, setResult] = useState(null);
+  const [history, setHistory] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
-  const [history, setHistory] = useState([]);
 
   const handleChange = (event) => {
-    const { name, value, type } = event.target;
+    const { name, value } = event.target;
 
-    setFormData({
-      ...formData,
-      [name]: type === "number" ? Number(value) : value,
-    });
+    setFormData((previous) => ({
+      ...previous,
+      [name]: value,
+    }));
   };
 
   const handleSubmit = async (event) => {
@@ -39,12 +50,24 @@ function App() {
     setResult(null);
 
     try {
+      const payload = { ...formData };
+
+      numericFields.forEach((field) => {
+        payload[field] = Number(formData[field]);
+      });
+
+      for (const field of numericFields) {
+        if (!Number.isFinite(payload[field])) {
+          throw new Error(`Please enter a valid value for ${field}.`);
+        }
+      }
+
       const response = await fetch("http://127.0.0.1:8000/predict", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(payload),
       });
 
       if (!response.ok) {
@@ -55,444 +78,263 @@ function App() {
 
       setResult(data);
 
-      // Add prediction to session history
-      const historyItem = {
-        id: Date.now(),
-        location: formData.location,
-        facilityType: formData.facility_type,
-        prediction: data.prediction,
-        probability: data.probabilities[data.prediction],
-      };
-
-      setHistory((previousHistory) => [
-        historyItem,
-        ...previousHistory,
+      setHistory((previous) => [
+        {
+          ...data,
+          time: new Date().toLocaleTimeString(),
+        },
+        ...previous,
       ]);
     } catch (err) {
-      setError(
-        "Unable to connect to the prediction API. Make sure the FastAPI server is running."
-      );
+      setError(err.message);
     } finally {
       setLoading(false);
     }
   };
 
-  const getRiskClass = () => {
-    if (!result) return "";
-
-    return result.prediction.toLowerCase();
+  const getRiskClass = (risk) => {
+    if (risk === "High") return "risk-high";
+    if (risk === "Medium") return "risk-medium";
+    return "risk-low";
   };
 
   return (
     <div className="app">
-      {/* Header */}
-      <header className="header">
-        <div>
-          <p className="eyebrow">AI-POWERED FACILITY MONITORING</p>
+      <header className="hero">
+        <div className="hero-content">
+          <p className="hero-tag">AI • MACHINE LEARNING • FASTAPI</p>
 
-          <h1>Smart Hygiene Risk Prediction</h1>
+          <h1>Smart Hygiene Risk Prediction System</h1>
 
-          <p className="subtitle">
-            Predict facility hygiene risk using machine learning.
+          <p>
+            Predict facility hygiene risk using machine learning and real-time
+            facility information.
           </p>
-        </div>
-
-        <div className="status">
-          <span className="status-dot"></span>
-          API Ready
         </div>
       </header>
 
-      {/* Main Dashboard */}
-      <main className="dashboard">
-
-        {/* Facility Form */}
-        <section className="card form-card">
-          <div className="card-header">
+      <main className="container">
+        {/* FACILITY INFORMATION */}
+        <section className="card">
+          <div className="section-heading">
             <h2>Facility Information</h2>
-
-            <p>
-              Enter the latest inspection details.
-            </p>
+            <p>Enter the current facility inspection details.</p>
           </div>
 
           <form onSubmit={handleSubmit}>
             <div className="form-grid">
-
-              {/* Location */}
-              <div className="field">
+              <div className="form-group">
                 <label>Location</label>
-
                 <select
                   name="location"
                   value={formData.location}
                   onChange={handleChange}
                 >
-                  <option value="Dharampeth">Dharampeth</option>
-                  <option value="Sadar">Sadar</option>
-                  <option value="Wardha Road">Wardha Road</option>
-                  <option value="Nagpur Central">
-                    Nagpur Central
-                  </option>
+                  <option>Dharampeth</option>
+                  <option>Sadar</option>
+                  <option>Nagpur Central</option>
+                  <option>Wardha Road</option>
                 </select>
               </div>
 
-              {/* Facility Type */}
-              <div className="field">
+              <div className="form-group">
                 <label>Facility Type</label>
-
                 <select
                   name="facility_type"
                   value={formData.facility_type}
                   onChange={handleChange}
                 >
-                  <option value="Public Washroom">
-                    Public Washroom
-                  </option>
-
-                  <option value="Office Washroom">
-                    Office Washroom
-                  </option>
-
-                  <option value="School Washroom">
-                    School Washroom
-                  </option>
-
-                  <option value="Hospital Washroom">
-                    Hospital Washroom
-                  </option>
-
-                  <option value="Mall Washroom">
-                    Mall Washroom
-                  </option>
-
-                  <option value="Transit Washroom">
-                    Transit Washroom
-                  </option>
+                  <option>Public Washroom</option>
+                  <option>Office Washroom</option>
+                  <option>School Washroom</option>
+                  <option>Hospital Washroom</option>
+                  <option>Mall Washroom</option>
+                  <option>Transit Washroom</option>
                 </select>
               </div>
 
-              {/* Cleanliness */}
-              <div className="field">
+              <div className="form-group">
                 <label>Cleanliness Score</label>
-
                 <input
-                  type="number"
+                  type="text"
+                  inputMode="decimal"
                   name="cleanliness_score"
-                  min="1"
-                  max="10"
-                  step="0.1"
                   value={formData.cleanliness_score}
                   onChange={handleChange}
+                  placeholder="1 - 10"
                   required
                 />
               </div>
 
-              {/* Odor */}
-              <div className="field">
+              <div className="form-group">
                 <label>Odor Score</label>
-
                 <input
-                  type="number"
+                  type="text"
+                  inputMode="decimal"
                   name="odor_score"
-                  min="1"
-                  max="10"
-                  step="0.1"
                   value={formData.odor_score}
                   onChange={handleChange}
+                  placeholder="1 - 10"
                   required
                 />
               </div>
 
-              {/* Waste */}
-              <div className="field">
+              <div className="form-group">
                 <label>Waste Level</label>
-
                 <input
-                  type="number"
+                  type="text"
+                  inputMode="decimal"
                   name="waste_level"
-                  min="0"
-                  max="100"
-                  step="0.1"
                   value={formData.waste_level}
                   onChange={handleChange}
+                  placeholder="0 - 100"
                   required
                 />
               </div>
 
-              {/* Water */}
-              <div className="field">
+              <div className="form-group">
                 <label>Water Availability</label>
-
                 <select
                   name="water_availability"
                   value={formData.water_availability}
                   onChange={handleChange}
                 >
-                  <option value="Yes">Yes</option>
-                  <option value="No">No</option>
+                  <option>Yes</option>
+                  <option>No</option>
                 </select>
               </div>
 
-              {/* Footfall */}
-              <div className="field">
+              <div className="form-group">
                 <label>Footfall</label>
-
                 <input
-                  type="number"
+                  type="text"
+                  inputMode="numeric"
                   name="footfall"
-                  min="0"
                   value={formData.footfall}
                   onChange={handleChange}
+                  placeholder="Number of visitors"
                   required
                 />
               </div>
 
-              {/* Complaints */}
-              <div className="field">
+              <div className="form-group">
                 <label>Complaints</label>
-
                 <input
-                  type="number"
+                  type="text"
+                  inputMode="numeric"
                   name="complaints"
-                  min="0"
                   value={formData.complaints}
                   onChange={handleChange}
+                  placeholder="Number of complaints"
                   required
                 />
               </div>
 
-              {/* Cleaning Time */}
-              <div className="field">
+              <div className="form-group">
                 <label>Hours Since Cleaning</label>
-
                 <input
-                  type="number"
+                  type="text"
+                  inputMode="decimal"
                   name="hours_since_cleaning"
-                  min="0"
-                  step="0.1"
                   value={formData.hours_since_cleaning}
                   onChange={handleChange}
+                  placeholder="Hours"
                   required
                 />
               </div>
 
-              {/* Month */}
-              <div className="field">
+              <div className="form-group">
                 <label>Inspection Month</label>
-
                 <input
-                  type="number"
+                  type="text"
+                  inputMode="numeric"
                   name="inspection_month"
-                  min="1"
-                  max="12"
                   value={formData.inspection_month}
                   onChange={handleChange}
+                  placeholder="1 - 12"
                   required
                 />
               </div>
 
-              {/* Day */}
-              <div className="field">
-                <label>Day of Week</label>
-
+              <div className="form-group">
+                <label>Inspection Day of Week</label>
                 <input
-                  type="number"
+                  type="text"
+                  inputMode="numeric"
                   name="inspection_day_of_week"
-                  min="0"
-                  max="6"
                   value={formData.inspection_day_of_week}
                   onChange={handleChange}
+                  placeholder="0 - 6"
                   required
                 />
               </div>
             </div>
 
-            <button
-              className="predict-button"
-              type="submit"
-              disabled={loading}
-            >
-              {loading
-                ? "Analyzing..."
-                : "Predict Hygiene Risk"}
+            <button type="submit" className="predict-button" disabled={loading}>
+              {loading ? "Predicting..." : "Predict Hygiene Risk"}
             </button>
           </form>
+
+          {error && <div className="error-box">{error}</div>}
         </section>
 
-        {/* Prediction Result */}
-        <section className="card result-card">
-          <div className="card-header">
-            <h2>Prediction Result</h2>
-
-            <p>
-              Machine learning assessment.
-            </p>
-          </div>
-
-          {/* Initial State */}
-          {!result && !error && !loading && (
-            <div className="empty-state">
-              <div className="empty-icon">
-                AI
-              </div>
-
-              <h3>Ready for Prediction</h3>
-
-              <p>
-                Enter facility information and click the
-                prediction button.
-              </p>
+        {/* PREDICTION RESULT */}
+        {result && (
+          <section className="card result-card">
+            <div className="section-heading">
+              <h2>Prediction Result</h2>
+              <p>Machine learning prediction for the submitted facility.</p>
             </div>
-          )}
 
-          {/* Loading */}
-          {loading && (
-            <div className="empty-state">
-              <div className="loader"></div>
-
-              <h3>
-                Analyzing Facility...
-              </h3>
-
-              <p>
-                The ML model is processing your input.
-              </p>
+            <div className={`risk-result ${getRiskClass(result.prediction)}`}>
+              <span>Predicted Hygiene Risk</span>
+              <strong>{result.prediction}</strong>
             </div>
-          )}
 
-          {/* Error */}
-          {error && (
-            <div className="error-box">
-              <strong>
-                Connection Error
-              </strong>
-
-              <p>
-                {error}
-              </p>
+            <div className="probability-grid">
+              {Object.entries(result.probabilities).map(([risk, value]) => (
+                <div className="probability-card" key={risk}>
+                  <span>{risk}</span>
+                  <strong>{(value * 100).toFixed(2)}%</strong>
+                </div>
+              ))}
             </div>
-          )}
+          </section>
+        )}
 
-          {/* Result */}
-          {result && !loading && (
-            <div className="result-content">
-
-              <div
-                className={`risk-badge ${getRiskClass()}`}
-              >
-                {result.prediction}
-              </div>
-
-              <h3 className="risk-title">
-                {result.prediction} Hygiene Risk
-              </h3>
-
-              <p className="result-description">
-                Based on the submitted facility conditions,
-                the trained Logistic Regression model
-                classified this facility as{" "}
-                <strong>
-                  {result.prediction}
-                </strong>{" "}
-                risk.
-              </p>
-
-              {/* Probabilities */}
-              <div className="probabilities">
-                <h3>
-                  Risk Probabilities
-                </h3>
-
-                {Object.entries(
-                  result.probabilities
-                ).map(
-                  ([risk, probability]) => (
-                    <div
-                      className="probability-row"
-                      key={risk}
-                    >
-                      <div className="probability-label">
-                        <span>
-                          {risk}
-                        </span>
-
-                        <span>
-                          {(probability * 100).toFixed(2)}%
-                        </span>
-                      </div>
-
-                      <div className="progress-bar">
-                        <div
-                          className={`progress-fill ${risk.toLowerCase()}`}
-                          style={{
-                            width: `${probability * 100}%`,
-                          }}
-                        ></div>
-                      </div>
-                    </div>
-                  )
-                )}
-              </div>
-            </div>
-          )}
-        </section>
-
-        {/* Prediction History */}
-        <section className="card history-card">
-          <div className="card-header">
+        {/* HISTORY */}
+        <section className="card">
+          <div className="section-heading">
             <h2>Prediction History</h2>
-
-            <p>
-              Predictions made during this session.
-            </p>
+            <p>Recent predictions from this browser session.</p>
           </div>
 
           {history.length === 0 ? (
-            <div className="history-empty">
-              No predictions yet.
+            <div className="empty-history">
+              No predictions yet. Submit the form to create prediction
+              history.
             </div>
           ) : (
             <div className="history-list">
-              {history.map((item) => (
-                <div
-                  className="history-item"
-                  key={item.id}
-                >
-                  <div className="history-details">
-                    <strong>
-                      {item.location}
-                    </strong>
-
-                    <span>
-                      {item.facilityType}
-                    </span>
+              {history.map((item, index) => (
+                <div className="history-item" key={index}>
+                  <div>
+                    <strong>{item.prediction} Risk</strong>
+                    <span>{item.time}</span>
                   </div>
 
-                  <div
-                    className={`history-risk ${item.prediction.toLowerCase()}`}
-                  >
+                  <div className={`history-badge ${getRiskClass(item.prediction)}`}>
                     {item.prediction}
-                  </div>
-
-                  <div className="history-probability">
-                    {(
-                      item.probability * 100
-                    ).toFixed(2)}
-                    %
                   </div>
                 </div>
               ))}
             </div>
           )}
         </section>
-
       </main>
 
-      {/* Footer */}
       <footer>
-        Smart Hygiene Risk Prediction System •
-        Machine Learning + FastAPI + React
+        Smart Hygiene Risk Prediction System • PugArch Day 10 Final Project
       </footer>
     </div>
   );

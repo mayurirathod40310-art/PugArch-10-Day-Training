@@ -1,12 +1,24 @@
+/* ================================
+   GLOBAL RESET
+================================ */
+
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  background: #f4f7fb;
-  color: #172033;
+  font-family:
+    Inter,
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    sans-serif;
+  background: #f3f6fb;
+  color: #111827;
+  min-width: 320px;
 }
 
 button,
@@ -15,397 +27,430 @@ select {
   font: inherit;
 }
 
+
+/* ================================
+   MAIN APP
+================================ */
+
 .app {
   min-height: 100vh;
+  background:
+    linear-gradient(
+      180deg,
+      #eaf2ff 0%,
+      #f3f6fb 32%,
+      #f3f6fb 100%
+    );
 }
 
-.header {
-  background: #172033;
-  color: white;
-  padding: 32px 7%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 20px;
+
+/* ================================
+   HERO
+================================ */
+
+.hero {
+  width: 100%;
+  padding: 58px 20px 62px;
+  background:
+    linear-gradient(
+      135deg,
+      #1d4ed8 0%,
+      #2563eb 50%,
+      #4f46e5 100%
+    );
+  color: #ffffff;
+  text-align: center;
 }
 
-.eyebrow {
-  margin: 0 0 8px;
-  font-size: 12px;
-  font-weight: bold;
+.hero-content {
+  max-width: 950px;
+  margin: 0 auto;
+}
+
+.hero-tag {
+  margin-bottom: 14px;
+  font-size: 13px;
+  font-weight: 800;
   letter-spacing: 2px;
-  opacity: 0.7;
+  color: #dbeafe;
 }
 
-.header h1 {
-  margin: 0;
-  font-size: 32px;
+.hero h1 {
+  margin: 0 auto 16px;
+  font-size: clamp(32px, 5vw, 52px);
+  line-height: 1.1;
+  font-weight: 850;
+  color: #ffffff;
 }
 
-.subtitle {
-  margin: 10px 0 0;
-  color: #c8d0df;
+.hero p:last-child {
+  max-width: 720px;
+  margin: 0 auto;
+  font-size: 17px;
+  line-height: 1.6;
+  color: #eff6ff;
 }
 
-.status {
-  padding: 10px 16px;
-  border: 1px solid #40506b;
-  border-radius: 20px;
-  font-size: 14px;
-  white-space: nowrap;
+
+/* ================================
+   CONTENT CONTAINER
+================================ */
+
+.container {
+  width: min(1100px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 34px 0 50px;
 }
 
-.status-dot {
-  display: inline-block;
-  width: 9px;
-  height: 9px;
-  background: #36c98f;
-  border-radius: 50%;
-  margin-right: 8px;
-}
 
-.dashboard {
-  width: 86%;
-  max-width: 1250px;
-  margin: 35px auto;
-  display: grid;
-  grid-template-columns: 1.25fr 0.75fr;
-  gap: 25px;
-}
+/* ================================
+   CARDS
+================================ */
 
 .card {
-  background: white;
-  border-radius: 16px;
-  padding: 28px;
-  box-shadow: 0 8px 30px rgba(23, 32, 51, 0.08);
+  width: 100%;
+  margin-bottom: 28px;
+  padding: 30px;
+  background: #ffffff;
+  border: 1px solid #dbe3ef;
+  border-radius: 18px;
+  box-shadow: 0 8px 25px rgba(15, 23, 42, 0.08);
 }
 
-.card-header {
-  margin-bottom: 25px;
+
+/* ================================
+   SECTION HEADINGS
+================================ */
+
+.section-heading {
+  margin-bottom: 26px;
 }
 
-.card-header h2 {
+.section-heading h2 {
+  margin: 0 0 9px;
+  font-size: 29px;
+  line-height: 1.2;
+  font-weight: 800;
+  color: #111827;
+  opacity: 1;
+}
+
+.section-heading p {
   margin: 0;
-  font-size: 22px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: #374151;
+  opacity: 1;
 }
 
-.card-header p {
-  margin: 7px 0 0;
-  color: #6d7789;
-  font-size: 14px;
-}
+
+/* ================================
+   FORM
+================================ */
 
 .form-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 18px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px;
 }
 
-.field {
+.form-group {
   display: flex;
   flex-direction: column;
-  gap: 7px;
+  gap: 8px;
 }
 
-.field label {
-  font-size: 13px;
-  font-weight: bold;
-  color: #4b5668;
+.form-group label {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1f2937;
 }
 
-.field input,
-.field select {
+.form-group input,
+.form-group select {
   width: 100%;
-  padding: 12px 13px;
-  border: 1px solid #d8deea;
-  border-radius: 9px;
-  background: #fbfcfe;
-  color: #172033;
+  min-height: 48px;
+  padding: 11px 13px;
+  border: 1px solid #cbd5e1;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #111827;
   outline: none;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
-.field input:focus,
-.field select:focus {
-  border-color: #172033;
-  background: white;
+.form-group input::placeholder {
+  color: #9ca3af;
 }
+
+.form-group input:focus,
+.form-group select:focus {
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.13);
+}
+
+
+/* ================================
+   PREDICT BUTTON
+================================ */
 
 .predict-button {
+  display: block;
   width: 100%;
-  margin-top: 25px;
-  padding: 14px;
+  min-height: 52px;
+  margin-top: 28px;
+  padding: 13px 20px;
   border: none;
-  border-radius: 9px;
-  background: #172033;
-  color: white;
-  font-weight: bold;
+  border-radius: 11px;
+  background: #2563eb;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 800;
   cursor: pointer;
-  transition: transform 0.15s ease, opacity 0.15s ease;
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
 }
 
 .predict-button:hover {
+  background: #1d4ed8;
   transform: translateY(-1px);
-  opacity: 0.92;
+  box-shadow: 0 7px 18px rgba(37, 99, 235, 0.25);
 }
 
 .predict-button:disabled {
-  opacity: 0.6;
+  background: #93c5fd;
   cursor: not-allowed;
+  transform: none;
+  box-shadow: none;
 }
+
+
+/* ================================
+   ERROR
+================================ */
+
+.error-box {
+  margin-top: 20px;
+  padding: 14px 16px;
+  border: 1px solid #fecaca;
+  border-radius: 10px;
+  background: #fef2f2;
+  color: #b91c1c;
+  font-weight: 600;
+}
+
+
+/* ================================
+   PREDICTION RESULT
+================================ */
 
 .result-card {
-  min-height: 500px;
-}
-
-.empty-state {
-  min-height: 390px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  color: #6d7789;
-}
-
-.empty-state h3 {
-  margin: 18px 0 5px;
-  color: #172033;
-}
-
-.empty-state p {
-  max-width: 280px;
-  line-height: 1.5;
-  margin: 0;
-}
-
-.empty-icon {
-  width: 65px;
-  height: 65px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #eef2f7;
-  color: #172033;
-  font-weight: bold;
-}
-
-.result-content {
-  text-align: center;
-}
-
-.risk-badge {
-  display: inline-flex;
-  min-width: 130px;
-  justify-content: center;
-  padding: 12px 22px;
-  border-radius: 30px;
-  font-size: 18px;
-  font-weight: bold;
-  margin: 15px 0;
-}
-
-.risk-badge.high {
-  background: #ffe4e4;
-  color: #b42318;
-}
-
-.risk-badge.medium {
-  background: #fff1cc;
-  color: #9a6700;
-}
-
-.risk-badge.low {
-  background: #dff7e9;
-  color: #18794e;
-}
-
-.risk-title {
-  margin: 10px 0;
-  font-size: 25px;
-}
-
-.result-description {
-  color: #687386;
-  line-height: 1.6;
-  font-size: 14px;
-}
-
-.probabilities {
-  margin-top: 30px;
-  text-align: left;
-}
-
-.probabilities h3 {
-  font-size: 16px;
-  margin-bottom: 20px;
-}
-
-.probability-row {
-  margin-bottom: 18px;
-}
-
-.probability-label {
-  display: flex;
-  justify-content: space-between;
-  font-size: 13px;
-  font-weight: bold;
-  margin-bottom: 7px;
-}
-
-.progress-bar {
-  width: 100%;
-  height: 9px;
-  background: #edf0f5;
-  border-radius: 10px;
   overflow: hidden;
 }
 
-.progress-fill {
-  height: 100%;
-  border-radius: 10px;
+.risk-result {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 24px;
+  margin-bottom: 22px;
+  border-radius: 14px;
 }
 
-.progress-fill.high {
-  background: #d64545;
+.risk-result span {
+  font-size: 16px;
+  font-weight: 700;
 }
 
-.progress-fill.medium {
-  background: #e0a72f;
+.risk-result strong {
+  font-size: 28px;
+  font-weight: 850;
 }
 
-.progress-fill.low {
-  background: #32a66a;
+
+/* Risk colours */
+
+.risk-high {
+  background: #fee2e2;
+  color: #991b1b;
 }
 
-.error-box {
-  margin-top: 50px;
+.risk-medium {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.risk-low {
+  background: #dcfce7;
+  color: #166534;
+}
+
+
+/* ================================
+   PROBABILITY CARDS
+================================ */
+
+.probability-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 16px;
+}
+
+.probability-card {
   padding: 20px;
-  border-radius: 10px;
-  background: #fff0f0;
-  color: #a42626;
-}
-
-.error-box p {
-  margin-bottom: 0;
-  font-size: 14px;
-}
-
-.loader {
-  width: 40px;
-  height: 40px;
-  border: 4px solid #e1e6ee;
-  border-top-color: #172033;
-  border-radius: 50%;
-  animation: spin 0.8s linear infinite;
-}
-
-footer {
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  background: #f8fafc;
   text-align: center;
-  padding: 20px;
-  color: #7a8494;
+}
+
+.probability-card span {
+  display: block;
+  margin-bottom: 7px;
+  color: #374151;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.probability-card strong {
+  color: #111827;
+  font-size: 24px;
+  font-weight: 800;
+}
+
+
+/* ================================
+   PREDICTION HISTORY
+================================ */
+
+.empty-history {
+  padding: 25px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 12px;
+  background: #f8fafc;
+  color: #374151;
+  text-align: center;
+  font-size: 15px;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.history-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 17px 18px;
+  border: 1px solid #dbe3ef;
+  border-radius: 12px;
+  background: #f8fafc;
+}
+
+.history-item > div:first-child {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.history-item strong {
+  color: #111827;
+  font-size: 16px;
+  font-weight: 800;
+}
+
+.history-item span {
+  color: #4b5563;
   font-size: 13px;
 }
 
-@keyframes spin {
-  to {
-    transform: rotate(360deg);
-  }
+.history-badge {
+  min-width: 85px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 800;
 }
 
-@media (max-width: 900px) {
-  .dashboard {
-    grid-template-columns: 1fr;
-  }
 
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+  padding: 28px 20px;
+  background: #111827;
+  color: #d1d5db;
+  text-align: center;
+  font-size: 14px;
 }
 
-@media (max-width: 600px) {
-  .dashboard {
-    width: 92%;
-    margin: 20px auto;
+
+/* ================================
+   RESPONSIVE
+================================ */
+
+@media (max-width: 800px) {
+  .hero {
+    padding: 45px 18px 50px;
+  }
+
+  .container {
+    width: min(100% - 22px, 700px);
+    padding-top: 22px;
   }
 
   .card {
-    padding: 20px;
+    padding: 22px;
+    border-radius: 14px;
   }
 
   .form-grid {
     grid-template-columns: 1fr;
   }
 
-  .header {
-    padding: 25px 4%;
-  }
-
-  .header h1 {
-    font-size: 25px;
-  }
-}
-.history-card {
-  grid-column: 1 / -1;
-}
-
-.history-empty {
-  padding: 25px;
-  text-align: center;
-  color: #7a8494;
-}
-
-.history-list {
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-.history-item {
-  display: grid;
-  grid-template-columns: 1fr auto auto;
-  align-items: center;
-  gap: 20px;
-  padding: 15px;
-  border: 1px solid #e4e8ef;
-  border-radius: 10px;
-}
-
-.history-details strong,
-.history-details span {
-  display: block;
-}
-
-.history-details span {
-  margin-top: 4px;
-  color: #7a8494;
-  font-size: 13px;
-}
-
-.history-risk {
-  font-weight: bold;
-}
-
-.history-risk.high {
-  color: #b42318;
-}
-
-.history-risk.medium {
-  color: #9a6700;
-}
-
-.history-risk.low {
-  color: #18794e;
-}
-
-.history-probability {
-  font-weight: bold;
-}
-
-@media (max-width: 600px) {
-  .history-item {
+  .probability-grid {
     grid-template-columns: 1fr;
-    gap: 8px;
+  }
+
+  .risk-result {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero h1 {
+    font-size: 32px;
+  }
+
+  .hero p:last-child {
+    font-size: 15px;
+  }
+
+  .section-heading h2 {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 18px;
+  }
+
+  .history-item {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .history-badge {
+    width: 100%;
   }
 }
